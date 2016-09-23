@@ -1,3 +1,11 @@
+*.psd
+/bower_components
+prepros.cfg
+*.css.map
+img/temp
+/temp
+bower.json
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
