@@ -6,6 +6,161 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="mobileHeader">
+		<div class="mobileHeader__map">Карта штата</div>
+		<div class="mobileHeader__info">Информация</div>
+		<div class="mobileHeader__photo">Фото и видео</div>
+		<div class="mobileHeader__hotels">Гостиницы</div>
+	</div>
 	
+	
+	
+	
+	<header class="mainHeader">
+		<div class="logo"></div>
+		<div class="mainHeader__menu"></div>
+	</header>
+	
+	
+	
+	
+	<main class="content">
+		<section class="intro">
+			<div class="into__title">
+				<img src="img/text-welcome.svg" alt="Welcome"> <br>
+				<img src="img/text-tothegorgeous.svg" alt="To the gorgeous">
+			</div>
+			<div class="intro__sedona">
+				<img src="img/text-sedona.svg" alt="Sedona">
+			</div>
+			
+			<div class="intro__slogan">
+				<img src="img/text-becausecanyon.svg" alt="Because Grand canyon sucks">
+			</div>
+			<div class="intro__text">
+				<span>СЕДОНА — небольшой 
+					городок в АРИЗОНЕ, 
+					зАСЛУЖИвающий большего!
+				</span>
+				Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
+			</div>
+		</section>
+		
+		
+		<section class="reason">
+			<div class="reason__title">Настоящий городок</div>
+			<div class="reason__number">№1</div>
+			<div class="reason__text">
+				СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+			</div>
+			<div class="reason__image"></div>
+			<div class="reason__feature">
+				<div class="reason__title">Жилье</div>
+				<div class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+			</div>
+			<div class="reason__feature">
+				<div class="reason__title">Сувениры</div>
+				<div class="reason__text">Не только китайского, но и местного производства!</div>
+			</div>
+			<div class="reason__feature">
+				<div class="reason__title"></div>
+				<div class="reason__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
+			</div>
+		</section>
+		
+		
+		
+		<section class="reason">
+			<div class="reason__title">Там есть мост дьявола</div>
+			<div class="reason__number">№2</div>
+			<div class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+			<div class="reason__image"></div>
+		</section>
+		
+		
+		<section class="reason">
+			<div class="reason__title">Небольшая площадь</div>
+			<div class="reason__number">№3</div>
+			<div class="reason__text">Все достопримечательности находятся очень близко</div>
+		</section>
+		
+		
+		<section class="reason">
+			<div class="reason__title">Красивая дорога</div>
+			<div class="reason__number">№4</div>
+			<div class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+		</section>
+		
+		
+		<section class="reason">
+			<div class="reason__title">Мало туристов</div>
+			<div class="reason__number">№5</div>
+			<div class="reason__text">Большинство едет в Гранд каньон и толпится там</div>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+	</main>
+	
+	
+	
+	
+	<div class="search">
+		<section class="interes">
+			<div class="interes__title">Заинтересовались?</div>
+			<div class="interes__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
+			</div>
+		</section>
+		
+		
+		
+		<div class="search__header">Поиск гостиницы в Седоне</div>
+		<form action="/echo" method="post">
+			<label for="arrival">Дата заезда:</label>
+			<input id="arrival" type="date">
+			<label for="departure">Дата выезда:</label>
+			<input id="departure" type="date">
+			<div class="search__left">
+				<label for="adult">Взрослые:</label>
+				<div class="search__range">
+					<div class="search__btn search__btn_minus"></div>
+					<input id="adult" type="number">
+					<div class="search__btn search__btn_plus"></div>
+				</div>
+			</div>
+			<div class="search__right">
+				<label for="child">Дети:</label>
+				<div class="search__range">
+					<div class="search__btn search__btn_minus"></div>
+					<input id="child" type="number">
+					<div class="search__btn search__btn_plus"></div>
+				</div>
+			</div>
+			
+			<div class="btn search__btn">Найти</div>
+		</form>
+		
+		
+		<div class="map"></div>
+	</div>
+	
+	
+	
+	
+	<div class="footer">
+		<div class="footer__title">#VISITSEDONA</div>
+		<div class="social">
+			<div class="social__tw"></div>
+			<div class="social__fb"></div>
+			<div class="social__yt"></div>
+		</div>
+		<section class="website">
+			Website by <a href="#"></a> for <a href="#"></a>
+		</section>
+	</div>
 </body>
 </html>
