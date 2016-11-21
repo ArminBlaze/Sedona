@@ -1,0 +1,38 @@
+// Variables
+
+$tabletWidth: '(min-width: 768px)';
+$desktopWidth: '(min-width: 1200px)';
+
+$bg_darkgray: #292929;
+$bg_lightgray: #f8f5f2;
+
+// Settings
+
+body {
+	font-size: 18px;
+	line-height: 27px;
+	font-family: 'PT Sans', sans-serif;
+	color: #f7f4f1;
+	font-style: normal;
+	
+	background-color: $bg_darkgray;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@import "mixins";
+@import "outlines";
+@import "normalize";
+
+
+
+
+
+
+
+
+
+
