@@ -3,8 +3,8 @@
 $tabletWidth: '(min-width: 768px)';
 $desktopWidth: '(min-width: 1200px)';
 
-$bg_darkgray: #292929;
-$bg_lightgray: #f8f5f2;
+$bg_light: #fff;
+$bg_color: #81b3d2;
 
 // Settings
 
@@ -12,10 +12,10 @@ body {
 	font-size: 18px;
 	line-height: 27px;
 	font-family: 'PT Sans', sans-serif;
-	color: #f7f4f1;
+	color: #333333;
 	font-style: normal;
 	
-	background-color: $bg_darkgray;
+	background-color: $bg_light;
 }
 
 img {
