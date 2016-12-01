@@ -5,6 +5,7 @@ $desktopWidth: '(min-width: 1200px)';
 
 $bg1: #fff;
 $bg2: #81b3d2;
+$bg_body: #f2f2f2;
 
 // Settings
 
@@ -15,7 +16,7 @@ body {
 	color: #333333;
 	font-style: normal;
 	
-	background-color: $bg1;
+	background-color: $bg_body;
 }
 
 img {
@@ -23,15 +24,43 @@ img {
 	height: auto;
 }
 
-@import "mixins";
-@import "outlines";
-@import "normalize";
+@import "mixins.scss";
+@import "outlines.scss";
+@import "normalize.scss";
 
-@import "mainHeader";
+@import "mainHeader.scss";
+@import "reasons.scss";
 
 
 
 
+.content {
+	@include container;
+}
+
+.into__header {
+	box-sizing: border-box;
+	padding-top: 90px;
+	padding-bottom: 29px;
+	min-height: 389px;
+	text-align: center;
+	
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media #{$tabletWidth} { 
+	.into__header {
+		padding-top: 75px;
+		min-height: 520px;
+//		padding-top: ;
+	}
+	
+	
+	
+}
 
 
 
