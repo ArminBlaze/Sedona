@@ -65,7 +65,20 @@ img {
 	
 }
 
-
+@media #{$desktopWidth} {
+	
+	html {
+		background-color: $bg_body;
+	}
+	
+	body {
+		@include container;
+		padding: 0;
+		box-shadow: 0 5px 15px rgba(#000101, 0.2);
+		background-color: #fff;
+		
+	}
+}
 
 
 
