@@ -52,6 +52,11 @@ img {
 	}
 }
 
+.intro__header_photo {
+	padding-top: 50px;
+	min-height: 160px;
+}
+
 @media #{$tabletWidth} { 
 	.into__header {
 		padding-top: 75px;

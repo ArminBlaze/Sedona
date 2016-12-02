@@ -12,19 +12,35 @@ img {
   height: auto;
 }
 
-body {
+.body_index {
   background: #f2f2f2 url("../temp/sedona-all-16/layer 1.png") no-repeat 50% 0;
 }
 
 @media (min-width: 768px) {
-  body {
+  .body_index {
     background-image: url("../temp/sedona-all-16/layer 2.png");
   }
 }
 
 @media (min-width: 1200px) {
-  body {
+  .body_index {
     background-image: url("../temp/sedona-all-16/layer 3.png");
+  }
+}
+
+.body_photo {
+  background: #f2f2f2 url("../temp/sedona-all-16/photo 1.png") no-repeat 50% 0;
+}
+
+@media (min-width: 768px) {
+  .body_photo {
+    background-image: url("../temp/sedona-all-16/photo 2.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .body_photo {
+    background-image: url("../temp/sedona-all-16/photo 3.png");
   }
 }
 
@@ -982,6 +998,11 @@ template {
 .into__header img {
   display: block;
   margin: 0 auto;
+}
+
+.intro__header_photo {
+  padding-top: 50px;
+  min-height: 160px;
 }
 
 @media (min-width: 768px) {

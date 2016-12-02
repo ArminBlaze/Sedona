@@ -1,4 +1,4 @@
-body {
+.body_index {
 	background: $bg_body url("../temp/sedona-all-16/layer 1.png") no-repeat 50% 0;
 //	background-size: 720px auto;
 //	min-height: 750px;
@@ -10,6 +10,22 @@ body {
 	
 	@media #{$desktopWidth} {
 		background-image: url("../temp/sedona-all-16/layer 3.png");
+//		background-size: 1391px auto;
+	}
+}
+
+.body_photo {
+	background: $bg_body url("../temp/sedona-all-16/photo 1.png") no-repeat 50% 0;
+//	background-size: 720px auto;
+//	min-height: 750px;
+	
+	@media #{$tabletWidth} {
+		background-image: url("../temp/sedona-all-16/photo 2.png");
+//		background-size: 1178px auto;
+	}
+	
+	@media #{$desktopWidth} {
+		background-image: url("../temp/sedona-all-16/photo 3.png");
 //		background-size: 1391px auto;
 	}
 }
