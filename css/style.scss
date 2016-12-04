@@ -34,12 +34,13 @@ img {
 @import "search.scss";
 @import "footer.scss";
 
+@import "photos.scss";
 
 .content {
 	@include container;
 }
 
-.into__header {
+.intro__header {
 	box-sizing: border-box;
 	padding-top: 90px;
 	padding-bottom: 29px;
@@ -54,19 +55,23 @@ img {
 
 .intro__header_photo {
 	padding-top: 50px;
-	min-height: 160px;
+	min-height: 159px;
 }
 
 @media #{$tabletWidth} { 
-	.into__header {
+	.intro__header {
 		padding-top: 75px;
 		min-height: 520px;
 //		padding-top: ;
 	}
 	
+	.intro__header_photo {
+		padding-top: 95px;
+	}
 	
-	
-	
+	.intro__header {
+		min-height: 290px;
+	}
 	
 }
 
@@ -83,7 +88,19 @@ img {
 		background-color: #fff;
 		
 	}
+	
+	.intro__header_photo {
+		padding-top: 100px;
+		min-height: 301px;
+	}
 }
+
+
+
+
+
+
+
 
 
 

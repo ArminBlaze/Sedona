@@ -44,6 +44,22 @@ img {
   }
 }
 
+.body_form {
+  background: #f2f2f2 url("../temp/sedona-all-16/form 1.png") no-repeat 50% 0;
+}
+
+@media (min-width: 768px) {
+  .body_form {
+    background-image: url("../temp/sedona-all-16/form 2.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .body_form {
+    background-image: url("../temp/sedona-all-16/form 3.png");
+  }
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -970,6 +986,163 @@ template {
   }
 }
 
+.photos {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+.photos__header {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photos__header_video {
+  border: none;
+  padding-bottom: 35px;
+}
+
+.photos__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+
+.photo {
+  min-height: 415px;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 22px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo__like {
+  font-weight: 700;
+  padding-left: 35px;
+  margin-top: 5px;
+}
+
+.photo__image {
+  width: 280px;
+  height: 280px;
+  outline: 1px solid gold;
+}
+
+.photo__footer {
+  padding-top: 14px;
+}
+
+.video {
+  min-height: 268px;
+  outline: 1px solid;
+}
+
+@media (min-width: 768px) {
+  .photos {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .photos__header {
+    padding-top: 65px;
+    width: 480px;
+    margin: 0 auto;
+    border: none;
+  }
+  .photos__header_video {
+    padding-top: 55px;
+    margin-bottom: 35px;
+  }
+  .photos__title {
+    font-size: 30px;
+    line-height: 1.3em;
+  }
+  .photos__list {
+    padding-top: 43px;
+    font-size: 0;
+  }
+  .photo {
+    padding: 0;
+    outline: 1px solid red;
+    width: 324px;
+    min-height: 347px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .photo__image {
+    width: 100%;
+    height: 267px;
+  }
+  .photo__footer {
+    box-sizing: border-box;
+    min-height: 80px;
+    position: relative;
+    outline: 1px solid lime;
+    padding-left: 20px;
+  }
+  .photo__like {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    min-width: 85px;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left;
+  }
+  .photo_top {
+    width: 100%;
+  }
+  .photo_top .photo__image {
+    height: 400px;
+  }
+  .video {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 85px;
+  }
+  .photo {
+    min-height: 0;
+    position: relative;
+    width: 400px;
+  }
+  .photo__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .photo_top {
+    width: 100%;
+  }
+  .photos__header_video {
+    padding-top: 60px;
+  }
+  .video {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
 .content {
   width: 320px;
   margin: 0 auto;
@@ -987,7 +1160,7 @@ template {
   }
 }
 
-.into__header {
+.intro__header {
   box-sizing: border-box;
   padding-top: 90px;
   padding-bottom: 29px;
@@ -995,20 +1168,26 @@ template {
   text-align: center;
 }
 
-.into__header img {
+.intro__header img {
   display: block;
   margin: 0 auto;
 }
 
 .intro__header_photo {
   padding-top: 50px;
-  min-height: 160px;
+  min-height: 159px;
 }
 
 @media (min-width: 768px) {
-  .into__header {
+  .intro__header {
     padding-top: 75px;
     min-height: 520px;
+  }
+  .intro__header_photo {
+    padding-top: 95px;
+  }
+  .intro__header {
+    min-height: 290px;
   }
 }
 
@@ -1034,6 +1213,13 @@ template {
 @media (min-width: 1200px) and (min-width: 1200px) {
   body {
     width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro__header_photo {
+    padding-top: 100px;
+    min-height: 301px;
   }
 }
 
