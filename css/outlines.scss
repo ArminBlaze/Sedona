@@ -30,3 +30,19 @@
 	}
 }
 
+.body_form {
+	background: $bg_body url("../temp/sedona-all-16/form 1.png") no-repeat 50% 0;
+//	background-size: 720px auto;
+//	min-height: 750px;
+	
+	@media #{$tabletWidth} {
+		background-image: url("../temp/sedona-all-16/form 2.png");
+//		background-size: 1178px auto;
+	}
+	
+	@media #{$desktopWidth} {
+		background-image: url("../temp/sedona-all-16/form 3.png");
+//		background-size: 1391px auto;
+	}
+}
+
