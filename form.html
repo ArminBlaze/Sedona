@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona Adaptive</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1">
+</head>
+<body class="">
+	
+	
+	<header class="mainHeader">
+		<a class="mainNav__toggle"></a>
+		
+		<div class="mainHeader__logo">
+			<img src="img/logo.svg" width="103" height="82" alt="Sedona">
+		</div>
+	
+	
+		<nav class="mainNav mainNav_closed mainNav_nojs">
+			<div class="mainNav__wrapper">
+				<ul class="mainNav__list">
+					<li class="mainNav__item mainNav__item_active"><a>Главная</a></li>
+					<li class="mainNav__item"><a href="#">Фото и видео</a></li>
+					<li class="mainNav__item mainNav__item_hidden">
+					</li>
+					<li class="mainNav__item"><a href="#">Форма отзыва</a></li>
+					<li class="mainNav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+	</header>
+	
+	
+	
+	
+	<main class="content">
+		<section class="intro">
+			<div class="intro__header intro__header_photo">
+				<img src="img/text-sedona.svg" alt="Sedona">
+			</div>
+			
+		</section>
+		
+		<div class="form">
+			<form action="/echo" method="post">
+				<div class="form__header">
+					<div class="form__title form__title_header">Оставьте свой отзыв</div>
+					<div class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
+				</div>
+				
+				<div class="form__item form__item_name">
+					<div class="form__title">Представьтесь, пожалуйста:</div>
+					
+					<label for="name" class="form__label">
+					<span class="form__caption">Имя:</span>
+						<input type="text" class="form__input form__input_name">
+					</label>
+					<label for="surname" class="form__label">
+					<span class="form__caption">Фамилия:</span>
+						<input type="text" class="form__input form__input_name form__input_surname">
+					</label>
+					<label for="patronymic" class="form__label">
+					<span class="form__caption">Отчество:</span>
+						<input type="text" class="form__input form__input_name form__input_patronymic">
+					</label>
+				</div>
+				
+				<div class="form__item form__item_contacts">
+					<div class="form__title">Контактная информация:</div>
+					<label for="tel" class="form__label form__label_contacts form__label_tel">
+						<span class="form__caption form__caption_contacts">Контактный телефон: </span>
+						<input class="form__input form__input_contacts" id="tel" type="tel" placeholder="Введите телефон">
+						<label for="tel" class="form__caption form__caption_contacts form__error form__error_tel">
+						Ошибка, перепроверьте номер
+						</label>
+					</label>
+					<label for="email" class="form__label form__label_contacts form__label_email">
+						<span class="form__caption form__caption_contacts">Электронная почта: </span>
+						<input class="form__input form__input_contacts" id="email" type="email" placeholder="Введите e-mail">
+						<label for="email" class="form__caption form__caption_contacts form__error form__error_email">
+						Ошибка, перепроверьте адрес
+						</label>
+					</label>
+					
+				</div>
+				
+				
+				<div class="form__item">
+					<div class="form__title">Ваше общее впечатление:</div>
+					<input class="form__input form__input_hidden" id="good" type="radio" name="impression" value="good" checked>
+					<label class="form__label form__label_click form__label_radio" for="good">Скорее положительное</label>
+					<input id="bad" class="form__input form__input_hidden" type="radio" name="impression" value="bad">
+					<label class="form__label form__label_click form__label_radio" for="bad">Скорее отрицательное</label>
+					<input id="dunno" class="form__input form__input_hidden" type="radio" name="impression" value="dunno">
+					<label class="form__label form__label_click form__label_radio" for="dunno">Затрудняюсь ответить</label>
+				</div>
+				
+				
+				<div class="form__item">
+					<div class="form__title">Посещенные достопримечательности:</div>
+					<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
+					<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
+					<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
+					<label class="form__label form__label_click form__label_checkbox" for="Slide">Слайд-парк</label>
+					<input id="BellMountain" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
+					<label class="form__label form__label_click form__label_checkbox" for="BellMountain">Гора-Колокол</label>
+					<input id="RedRocks" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
+					<label class="form__label form__label_click form__label_checkbox" for="RedRocks">Красные скалы</label>
+					
+					
+				</div>
+				
+				<div class="form__item">
+					<div class="form__title">Опишите свои эмоции:</div>
+					
+					<textarea class="form__input form__input_emotions" name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+					
+					<button class="btn form__btn">
+					Отправить отзыв
+					</button>
+				</div>
+				
+				
+			</form>
+		</div>
+		
+		
+		
+	</main>
+	
+	
+	
+	
+
+	
+	
+	
+	<div class="footer">
+		<div class="footer__title footer__item">#VISITSEDONA</div>
+		<div class="socials footer__item">
+			<div class="social social_tw"></div>
+			<div class="social social_fb"></div>
+			<div class="social social_yt"></div>
+		</div>
+		<section class="footer__website footer__item">
+			Разработано <a class="footer__logo" href="#"><img src="" alt="Logo"></a>
+		</section>
+	</div>
+	
+	
+	
+</body>
+</html>
