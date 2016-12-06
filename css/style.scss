@@ -5,6 +5,7 @@ $desktopWidth: '(min-width: 1200px)';
 
 $bg1: #fff;
 $bg2: #81b3d2;
+$bg3: #e5e5e5;
 $bg_body: #f2f2f2;
 $font1: 'PT Sans', sans-serif;
 
@@ -25,6 +26,21 @@ img {
 	height: auto;
 }
 
+.btn {
+	display: block;
+	width: 100%;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	font-family: $font1;
+	height: 58px;
+	background-color: #81b3d2;
+	margin-top: 35px;
+	border: none;
+	color: white;
+	font-weight: 700;
+}
+
 @import "mixins.scss";
 @import "outlines.scss";
 @import "normalize.scss";
@@ -35,6 +51,7 @@ img {
 @import "footer.scss";
 
 @import "photos.scss";
+@import "form.scss";
 
 .content {
 	@include container;
