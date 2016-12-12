@@ -54,26 +54,26 @@
 				</div>
 				
 				<div class="form__item form__item_name">
-					<div class="form__title">Представьтесь, пожалуйста:</div>
+					<div class="form__title form__title_left">Представьтесь<span class="form__hidden_tablet">, пожалуйста</span>:</div>
 					
 					<label for="name" class="form__label">
 					<span class="form__caption">Имя:</span>
-						<input type="text" class="form__input form__input_name">
+						<input type="text" class="form__input form__input_name" placeholder="Петр">
 					</label>
 					<label for="surname" class="form__label">
 					<span class="form__caption">Фамилия:</span>
-						<input type="text" class="form__input form__input_name form__input_surname">
+						<input type="text" class="form__input form__input_name form__input_surname" placeholder="Иванов">
 					</label>
 					<label for="patronymic" class="form__label">
 					<span class="form__caption">Отчество:</span>
-						<input type="text" class="form__input form__input_name form__input_patronymic">
+						<input type="text" class="form__input form__input_name form__input_patronymic" placeholder="Александрович">
 					</label>
 				</div>
 				
 				<div class="form__item form__item_contacts">
-					<div class="form__title">Контактная информация:</div>
+					<div class="form__title form__title_contacts">Контактная информация:</div>
 					<label for="tel" class="form__label form__label_contacts form__label_tel">
-						<span class="form__caption form__caption_contacts">Контактный телефон: </span>
+						<span class="form__caption form__caption_contacts"><span class="form__caption_desktop">Контактный </span>телефон: </span>
 						<input class="form__input form__input_contacts" id="tel" type="tel" placeholder="Введите телефон">
 						<label for="tel" class="form__caption form__caption_contacts form__error form__error_tel">
 						Ошибка, перепроверьте номер
@@ -90,8 +90,8 @@
 				</div>
 				
 				
-				<div class="form__item">
-					<div class="form__title">Ваше общее впечатление:</div>
+				<div class="form__item form__item_impression">
+					<div class="form__title form__title_left form__title_impression">Ваше общее впечатление:</div>
 					<input class="form__input form__input_hidden" id="good" type="radio" name="impression" value="good" checked>
 					<label class="form__label form__label_click form__label_radio" for="good">Скорее положительное</label>
 					<input id="bad" class="form__input form__input_hidden" type="radio" name="impression" value="bad">
@@ -101,28 +101,32 @@
 				</div>
 				
 				
-				<div class="form__item">
-					<div class="form__title">Посещенные достопримечательности:</div>
-					<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
-					<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
-					<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
-					<label class="form__label form__label_click form__label_checkbox" for="Slide">Слайд-парк</label>
-					<input id="BellMountain" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
-					<label class="form__label form__label_click form__label_checkbox" for="BellMountain">Гора-Колокол</label>
-					<input id="RedRocks" class="form__input form__input_hidden" type="checkbox" name="impression" value="dunno">
-					<label class="form__label form__label_click form__label_checkbox" for="RedRocks">Красные скалы</label>
-					
-					
+				<div class="form__item form__item_places">
+					<div class="form__title form__title_places">Посещенные достопримечательности:</div>
+					<div class="form__wrapper form__wrapper_left">
+						<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+						<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
+						<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+						<label class="form__label form__label_click form__label_checkbox" for="Slide">Слайд-парк</label>
+					</div>
+					<div class="form__wrapper form__wrapper_right">
+						<input id="BellMountain" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+						<label class="form__label form__label_click form__label_checkbox" for="BellMountain">Гора-Колокол</label>
+						<input id="RedRocks" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+						<label class="form__label form__label_click form__label_checkbox" for="RedRocks">Красные скалы</label>
+					</div>
 				</div>
 				
 				<div class="form__item">
-					<div class="form__title">Опишите свои эмоции:</div>
+					<div class="form__title form__title_emotions">Опишите свои эмоции:</div>
 					
 					<textarea class="form__input form__input_emotions" name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
 					
 					<button class="btn form__btn">
 					Отправить отзыв
 					</button>
+					
+					<span class="form__reminder">* &#8212; Обязательные поля</span>
 				</div>
 				
 				
