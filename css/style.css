@@ -4,7 +4,7 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #333333;
   font-style: normal;
-  background-color: white;
+  background-color: #f7f7f7;
 }
 
 img {
@@ -500,6 +500,7 @@ template {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 
 .mainNav__item {
@@ -556,9 +557,14 @@ template {
   width: 64px;
   height: 56px;
   cursor: pointer;
+  z-index: 10;
 }
 
-.mainNav__toggle:after, .mainNav__toggle:before {
+.mainNav__item_hidden {
+  display: none;
+}
+
+.mainNav_opened .mainNav__toggle:after, .mainNav_opened .mainNav__toggle:before {
   content: '';
   position: absolute;
   width: 28px;
@@ -570,16 +576,43 @@ template {
   margin-top: -2px;
 }
 
-.mainNav__toggle:before {
+.mainNav_opened .mainNav__toggle:before {
   transform: rotate(45deg);
 }
 
-.mainNav__toggle:after {
+.mainNav_opened .mainNav__toggle:after {
   transform: rotate(-45deg);
 }
 
-.mainNav__item_hidden {
-  display: none;
+.mainNav_closed .mainNav__toggle:before {
+  content: '';
+  position: absolute;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  top: 50%;
+  left: 50%;
+  margin-left: -11px;
+  margin-top: -2px;
+  box-shadow: 0 8px #81b3d2, 0 -8px #81b3d2;
+}
+
+@media (max-width: 767px) {
+  .mainNav_closed .mainNav__list {
+    display: none;
+  }
+  .mainNav_opened .mainNav__list:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 8px;
+    width: 100%;
+    box-shadow: inset 0 -3px 5px -2px rgba(0, 0, 0, 0.5);
+  }
+  .mainNav_nojs .mainNav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1572,6 +1605,7 @@ template {
   padding-bottom: 29px;
   min-height: 389px;
   text-align: center;
+  background-color: #9bb0c0;
 }
 
 .intro__header img {

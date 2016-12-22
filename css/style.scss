@@ -2,6 +2,7 @@
 
 $tabletWidth: '(min-width: 768px)';
 $desktopWidth: '(min-width: 1200px)';
+$mobileWidthOnly: '(max-width: 767px)';
 
 $bg1: #fff;
 $bg2: #81b3d2;
@@ -21,7 +22,7 @@ body {
 	color: #333333;
 	font-style: normal;
 	
-	background-color: white;
+	background-color: #f7f7f7;
 }
 
 img {
@@ -66,6 +67,7 @@ img {
 	padding-bottom: 29px;
 	min-height: 389px;
 	text-align: center;
+	background-color: #9bb0c0;
 	
 	img {
 		display: block;
