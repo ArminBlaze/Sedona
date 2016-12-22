@@ -6,6 +6,9 @@ $desktopWidth: '(min-width: 1200px)';
 $bg1: #fff;
 $bg2: #81b3d2;
 $bg3: #e5e5e5;
+$bg_btn1: #81b3d2;
+$bg_btn2: #669ec0;
+$bg_btn3: #5496bd;
 $bg_body: #f2f2f2;
 $font1: 'PT Sans', sans-serif;
 
@@ -42,7 +45,7 @@ img {
 }
 
 @import "mixins.scss";
-@import "outlines.scss";
+//@import "outlines.scss";
 @import "normalize.scss";
 
 @import "mainHeader.scss";

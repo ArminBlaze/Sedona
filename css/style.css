@@ -27,54 +27,6 @@ img {
   font-weight: 700;
 }
 
-.body_index {
-  background: #f2f2f2 url("../temp/sedona-all-16/layer 1.png") no-repeat 50% 0;
-}
-
-@media (min-width: 768px) {
-  .body_index {
-    background-image: url("../temp/sedona-all-16/layer 2.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  .body_index {
-    background-image: url("../temp/sedona-all-16/layer 3.png");
-  }
-}
-
-.body_photo {
-  background: #f2f2f2 url("../temp/sedona-all-16/photo 1.png") no-repeat 50% 0;
-}
-
-@media (min-width: 768px) {
-  .body_photo {
-    background-image: url("../temp/sedona-all-16/photo 2.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  .body_photo {
-    background-image: url("../temp/sedona-all-16/photo 3.png");
-  }
-}
-
-.body_form {
-  background: #f2f2f2 url("../temp/sedona-all-16/form 1.png") no-repeat 50% 0;
-}
-
-@media (min-width: 768px) {
-  .body_form {
-    background-image: url("../temp/sedona-all-16/form 2.png");
-  }
-}
-
-@media (min-width: 1200px) {
-  .body_form {
-    background-image: url("../temp/sedona-all-16/form 3.png");
-  }
-}
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -527,9 +479,9 @@ template {
   width: 320px;
   margin: 0 auto;
   padding-bottom: 56px;
-  outline: 1px solid red;
   position: relative;
   z-index: 2;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -552,19 +504,39 @@ template {
 
 .mainNav__item {
   text-align: center;
-  outline: 1px solid black;
 }
 
 .mainNav__item a {
   display: block;
-  min-height: 56px;
   box-sizing: border-box;
   text-align: center;
-  line-height: 56px;
+  padding: 13px;
+  padding-bottom: 14px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
   background-color: #81b3d2;
+}
+
+.mainNav__item a:hover {
+  background-color: #669ec0;
+  border-top-color: #86b2cd;
+}
+
+.mainNav__item a:active {
+  background-color: #5496bd;
+  border-top-color: #77acca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mainNav__item:last-child a {
+  border-bottom: none;
+}
+
+.mainNav__item:first-child a {
+  border-top-color: transparent;
 }
 
 .mainHeader__logo {
@@ -581,9 +553,29 @@ template {
 .mainNav__toggle {
   position: absolute;
   right: 0;
-  width: 56px;
+  width: 64px;
   height: 56px;
-  outline: 1px solid lime;
+  cursor: pointer;
+}
+
+.mainNav__toggle:after, .mainNav__toggle:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  margin-left: -14px;
+  margin-top: -2px;
+}
+
+.mainNav__toggle:before {
+  transform: rotate(45deg);
+}
+
+.mainNav__toggle:after {
+  transform: rotate(-45deg);
 }
 
 .mainNav__item_hidden {
