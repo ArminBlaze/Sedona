@@ -1,6 +1,6 @@
 .reasons {
 //	min-height: 2060px;
-	outline: 3px solid lime;
+	outline: 1px solid lime;
 	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 21px;
@@ -16,6 +16,7 @@
 	padding-top: 40px;
 	padding-left: 30px;
 	padding-right: 30px;
+	background-color: #fff;
 }
 
 .reasons__text_26 {
@@ -24,19 +25,20 @@
 
 .reasons__item {
 	box-sizing: border-box;
-	outline: 1px solid red;
+//	outline: 1px solid red;
 	text-align: center;
 	padding-top: 40px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 20px;
 	font-size: 14px;
+	position: relative;
 }
 
 .reasons__item_blue {
-//	color: white;
+	color: white;
 	padding-bottom: 38px;
-//	background-color: rgba($bg2, 0.3);
+	background-color: $bg2;
 	
 }
 
@@ -44,8 +46,20 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	min-height: 168px;
-//	background-color: #eee;
+	background-color: #eee;
+	
+	&:not(:last-child):after {
+		content: '';
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		height: 1px;
+		background-color: rgba(black, 0.1);
+		bottom: 0;
+	}
 }
+
+
 
 .reasons__title {
 	font-size: 18px;

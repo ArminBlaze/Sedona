@@ -38,11 +38,30 @@ img {
 	text-transform: uppercase;
 	font-family: $font1;
 	height: 58px;
-	background-color: #81b3d2;
+	background-color: $bg_btn1;
 	margin-top: 35px;
 	border: none;
 	color: white;
 	font-weight: 700;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: $bg_btn2;
+	}
+	
+	&:active {
+		background-color: $bg_btn3;
+		color: rgba(white, 0.3);
+	}
+	
+	&:disabled {
+		background-color: $bg3;
+		color: white;
+	}
+}
+
+.btn_progress {
+	animation: progress 0.5s ease-in-out infinite alternate;
 }
 
 @import "mixins.scss";
@@ -91,10 +110,6 @@ img {
 		padding-top: 95px;
 	}
 	
-	.intro__header {
-		min-height: 290px;
-	}
-	
 }
 
 @media #{$desktopWidth} {
@@ -118,6 +133,16 @@ img {
 }
 
 
+@keyframes progress {
+	0% { 
+		background-color: #5496bd;
+	}
+	
+	100% { 
+		background-color: #3e84ae;
+//		background-color: dodgerblue;
+	}
+}
 
 
 

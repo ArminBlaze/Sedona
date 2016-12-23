@@ -25,6 +25,25 @@ img {
   border: none;
   color: white;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #669ec0;
+}
+
+.btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn:disabled {
+  background-color: #e5e5e5;
+  color: white;
+}
+
+.btn_progress {
+  animation: progress 0.5s ease-in-out infinite alternate;
 }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -670,7 +689,7 @@ template {
 }
 
 .reasons {
-  outline: 3px solid lime;
+  outline: 1px solid lime;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
@@ -686,6 +705,7 @@ template {
   padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: #fff;
 }
 
 .reasons__text_26 {
@@ -694,23 +714,36 @@ template {
 
 .reasons__item {
   box-sizing: border-box;
-  outline: 1px solid red;
   text-align: center;
   padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   font-size: 14px;
+  position: relative;
 }
 
 .reasons__item_blue {
+  color: white;
   padding-bottom: 38px;
+  background-color: #81b3d2;
 }
 
 .reasons__item_gray {
   padding-top: 25px;
   padding-bottom: 25px;
   min-height: 168px;
+  background-color: #eee;
+}
+
+.reasons__item_gray:not(:last-child):after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
 }
 
 .reasons__title {
@@ -895,6 +928,7 @@ template {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+  background-color: #fff;
 }
 
 .interes__title {
@@ -958,6 +992,7 @@ template {
   padding-top: 36px;
   font-size: 0;
   padding-bottom: 1px;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -988,15 +1023,38 @@ template {
   display: inline-block;
   vertical-align: top;
   margin-right: 6px;
-  outline: 1px solid blue;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social:last-child {
   margin-right: 0;
 }
 
+.social:hover {
+  background-color: #669ec0;
+}
+
+.social:active {
+  background-color: #5496bd;
+}
+
+.social_tw {
+  background-image: url(../img/social_tw.svg);
+}
+
+.social_fb {
+  background-image: url(../img/social_fb.svg);
+}
+
+.social_yt {
+  background-image: url(../img/icon-burger.svg);
+}
+
 .socials {
   font-size: 0;
+  margin-bottom: 45px;
 }
 
 .footer__website {
@@ -1011,6 +1069,7 @@ template {
   width: 27px;
   height: 34px;
   font-size: 10px;
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1647,9 +1706,6 @@ template {
   .intro__header_photo {
     padding-top: 95px;
   }
-  .intro__header {
-    min-height: 290px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1681,6 +1737,15 @@ template {
   .intro__header_photo {
     padding-top: 100px;
     min-height: 301px;
+  }
+}
+
+@keyframes progress {
+  0% {
+    background-color: #5496bd;
+  }
+  100% {
+    background-color: #3e84ae;
   }
 }
 
