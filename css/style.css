@@ -767,6 +767,7 @@ template {
   height: 260px;
   vertical-align: top;
   display: block;
+  background-color: #866252;
 }
 
 .features {
@@ -908,6 +909,7 @@ template {
 }
 
 .search {
+  background-color: #fff;
   width: 320px;
   margin: 0 auto;
 }
@@ -986,6 +988,7 @@ template {
 
 .map {
   height: 350px;
+  background-color: #cad8b0;
 }
 
 .footer {
@@ -1014,6 +1017,8 @@ template {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-decoration: none;
+  color: black;
 }
 
 .footer__item {
@@ -1029,6 +1034,7 @@ template {
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .social:last-child {
@@ -1244,6 +1250,8 @@ template {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
   }
   .photo_top {
     width: 100%;
@@ -1668,6 +1676,7 @@ template {
 .content {
   width: 320px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -1708,6 +1717,7 @@ template {
   }
   .intro__header_photo {
     padding-top: 95px;
+    min-height: 291px;
   }
 }
 
