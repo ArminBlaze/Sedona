@@ -1319,10 +1319,7 @@ template {
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
-}
-
-.form__input_name {
-  float: right;
+  min-width: 0;
 }
 
 .form__input_emotions {
@@ -1347,16 +1344,14 @@ template {
   opacity: 1;
 }
 
-.form__input_name {
-  width: 230px;
-}
-
 .form__label {
   display: block;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   line-height: 58px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__label_contacts {
@@ -1420,11 +1415,6 @@ template {
   padding-left: 22px;
   margin-bottom: 7px;
   display: block;
-}
-
-.form__input_surname,
-.form__input_patronymic {
-  width: 192px;
 }
 
 .form__input_contacts {
