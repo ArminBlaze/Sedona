@@ -26,10 +26,27 @@
 	vertical-align: top;
 	margin-right: 6px;
 	outline: 1px solid blue;
+    background-repeat: no-repeat;
+    background-position: center;
 	
 	&:last-child {
 		margin-right: 0;
 	}
+}
+
+.social_tw {
+    background-image: url(../img/social_tw.svg);
+    background-size: 19px auto;
+}
+
+.social_fb {
+    background-image: url(../img/social_fb.svg);
+    background-size: 9px auto;
+}
+
+.social_yt {
+    background-image: url(../img/social_yt.svg);
+    background-size: 20px auto;
 }
 
 .socials {

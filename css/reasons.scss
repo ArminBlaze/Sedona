@@ -90,6 +90,20 @@
 	padding-top: 25px;
 	text-align: left;
 	padding-bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+}
+
+.feature_hotel {
+    background-image: url(../img/feature_hotel.svg);
+}
+
+.feature_gift {
+    background-image: url(../img/feature_gift.svg);
+}
+
+.feature_food {
+    background-image: url(../img/feature_food.svg);
 }
 
 .feature__title {
