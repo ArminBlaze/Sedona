@@ -5,6 +5,7 @@ prepros.cfg
 img/temp
 /temp
 bower.json
+prepros-6.config
 
 # Windows image file caches
 Thumbs.db
