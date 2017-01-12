@@ -1,4 +1,5 @@
 .search {
+	background-color: $bg1;
 	@include container;
 }
 
@@ -9,6 +10,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 50px;
+	background-color: #fff;
 }
 
 .interes__title {
@@ -68,4 +70,5 @@
 
 .map {
 	height: 350px;
+	background-color: #cad8b0;
 }

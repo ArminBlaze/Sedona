@@ -22,7 +22,20 @@ img {
   margin-top: 35px;
   border: none;
   color: white;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #669ec0; }
+  .btn:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3); }
+  .btn:disabled {
+    background-color: #e5e5e5;
+    color: white; }
+
+.btn_progress {
+  -webkit-animation: progress 0.5s ease-in-out infinite alternate;
+  animation: progress 0.5s ease-in-out infinite alternate; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -586,7 +599,7 @@ template {
     margin-left: -119px; } }
 
 .reasons {
-  outline: 3px solid lime;
+  outline: 1px solid lime;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px; }
@@ -600,28 +613,40 @@ template {
   text-align: center;
   padding-top: 40px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  background-color: #fff; }
 
 .reasons__text_26 {
   line-height: 26px; }
 
 .reasons__item {
   box-sizing: border-box;
-  outline: 1px solid red;
   text-align: center;
   padding-top: 40px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
-  font-size: 14px; }
+  font-size: 14px;
+  position: relative; }
 
 .reasons__item_blue {
-  padding-bottom: 38px; }
+  color: white;
+  padding-bottom: 38px;
+  background-color: #81b3d2; }
 
 .reasons__item_gray {
   padding-top: 25px;
   padding-bottom: 25px;
-  min-height: 168px; }
+  min-height: 168px;
+  background-color: #eee; }
+  .reasons__item_gray:not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0; }
 
 .reasons__title {
   font-size: 18px;
@@ -640,7 +665,8 @@ template {
 .reasons__image {
   height: 260px;
   vertical-align: top;
-  display: block; }
+  display: block;
+  background-color: #866252; }
 
 .features {
   box-sizing: border-box;
@@ -758,9 +784,12 @@ template {
     padding-right: 60px; }
     .reasons__item_gray:nth-child(2) .reasons__title {
       padding-left: 60px;
-      padding-right: 60px; } }
+      padding-right: 60px; }
+  .feature {
+    padding-top: 160px; } }
 
 .search {
+  background-color: #fff;
   width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
@@ -776,7 +805,8 @@ template {
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #fff; }
 
 .interes__title {
   font-size: 21px;
@@ -817,7 +847,8 @@ template {
     padding-bottom: 65px; } }
 
 .map {
-  height: 350px; }
+  height: 350px;
+  background-color: #cad8b0; }
 
 .footer {
   width: 320px;
@@ -825,7 +856,8 @@ template {
   text-align: center;
   padding-top: 36px;
   font-size: 0;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .footer {
       width: 768px; } }
@@ -836,7 +868,9 @@ template {
 .footer__title {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-decoration: none;
+  color: black; }
 
 .footer__item {
   margin-bottom: 35px; }
@@ -847,11 +881,25 @@ template {
   display: inline-block;
   vertical-align: top;
   margin-right: 6px;
-  outline: 1px solid blue;
+  background-color: #81b3d2;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  cursor: pointer; }
   .social:last-child {
     margin-right: 0; }
+  .social:hover {
+    background-color: #669ec0; }
+  .social:active {
+    background-color: #5496bd; }
+
+.social_tw {
+  background-image: url(../img/social_tw.svg); }
+
+.social_fb {
+  background-image: url(../img/social_fb.svg); }
+
+.social_yt {
+  background-image: url(../img/icon-burger.svg); }
 
 .social_tw {
   background-image: url(../img/social_tw.svg);
@@ -866,7 +914,8 @@ template {
   background-size: 20px auto; }
 
 .socials {
-  font-size: 0; }
+  font-size: 0;
+  margin-bottom: 45px; }
 
 .footer__website {
   font-size: 14px;
@@ -878,7 +927,8 @@ template {
   vertical-align: top;
   width: 27px;
   height: 34px;
-  font-size: 10px; }
+  font-size: 10px;
+  margin-left: 10px; }
 
 @media (min-width: 768px) {
   .footer__item {
@@ -1016,7 +1066,9 @@ template {
   .photo__footer {
     position: absolute;
     bottom: 0;
-    width: 100%; }
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white; }
   .photo_top {
     width: 100%; }
   .photos__header_video {
@@ -1072,10 +1124,8 @@ template {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  text-transform: none; }
-
-.form__input_name {
-  float: right; }
+  text-transform: none;
+  min-width: 0; }
 
 .form__input_emotions {
   width: 100%;
@@ -1095,15 +1145,18 @@ template {
   font-weight: 500;
   opacity: 1; }
 
-.form__input_name {
-  width: 230px; }
-
 .form__label {
   display: block;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
-  line-height: 58px; }
+  line-height: 58px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .form__label_contacts {
   line-height: 26px;
@@ -1154,10 +1207,6 @@ template {
   padding-left: 22px;
   margin-bottom: 7px;
   display: block; }
-
-.form__input_surname,
-.form__input_patronymic {
-  width: 192px; }
 
 .form__input_contacts {
   float: none;
@@ -1349,7 +1398,8 @@ template {
 
 .content {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fff; }
   @media (min-width: 768px) {
     .content {
       width: 768px; } }
@@ -1377,9 +1427,8 @@ template {
     padding-top: 75px;
     min-height: 520px; }
   .intro__header_photo {
-    padding-top: 95px; }
-  .intro__header {
-    min-height: 290px; } }
+    padding-top: 95px;
+    min-height: 291px; } }
 
 @media (min-width: 1200px) {
   html {
@@ -1401,3 +1450,15 @@ template {
   .intro__header_photo {
     padding-top: 100px;
     min-height: 301px; } }
+
+@-webkit-keyframes progress {
+  0% {
+    background-color: #5496bd; }
+  100% {
+    background-color: #3e84ae; } }
+
+@keyframes progress {
+  0% {
+    background-color: #5496bd; }
+  100% {
+    background-color: #3e84ae; } }

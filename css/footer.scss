@@ -6,12 +6,15 @@
 //	padding-bottom: 23px;
 	font-size: 0;
 	padding-bottom: 1px;
+	background-color: #fff;
 }
 
 .footer__title {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	text-decoration: none;
+	color: black;
 //	margin-bottom: 35px;
 }
 
@@ -25,13 +28,34 @@
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 6px;
-	outline: 1px solid blue;
-    background-repeat: no-repeat;
-    background-position: center;
+	background-color: $bg_btn1;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 	
 	&:last-child {
 		margin-right: 0;
 	}
+	
+	&:hover {
+		background-color: $bg_btn2;
+	}
+	
+	&:active {
+		background-color: $bg_btn3;
+	}
+}
+
+.social_tw {
+	background-image: url(../img/social_tw.svg);
+}
+
+.social_fb {
+	background-image: url(../img/social_fb.svg);
+}
+
+.social_yt {
+	background-image: url(../img/icon-burger.svg);
 }
 
 .social_tw {
@@ -51,7 +75,7 @@
 
 .socials {
 	font-size: 0;
-//	margin-bottom: 35px;
+	margin-bottom: 45px;
 }
 
 .footer__website {
@@ -66,6 +90,7 @@
 	width: 27px;
 	height: 34px;
 	font-size: 10px;
+	margin-left: 10px;
 }
 
 @media #{$tabletWidth} { 
