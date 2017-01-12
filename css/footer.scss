@@ -29,10 +29,21 @@
 	vertical-align: top;
 	margin-right: 6px;
 	background-color: $bg_btn1;
-	background-repeat: no-repeat;
-	background-position: center;
 	cursor: pointer;
+    
+    position: relative;
 	
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
 	&:last-child {
 		margin-right: 0;
 	}
@@ -44,31 +55,24 @@
 	&:active {
 		background-color: $bg_btn3;
 	}
+    
+    &:active:after {
+        opacity: 0.3;
+    }
+    
 }
 
-.social_tw {
-	background-image: url(../img/social_tw.svg);
-}
-
-.social_fb {
-	background-image: url(../img/social_fb.svg);
-}
-
-.social_yt {
-	background-image: url(../img/icon-burger.svg);
-}
-
-.social_tw {
+.social_tw:after {
     background-image: url(../img/social_tw.svg);
     background-size: 19px auto;
 }
 
-.social_fb {
+.social_fb:after {
     background-image: url(../img/social_fb.svg);
     background-size: 9px auto;
 }
 
-.social_yt {
+.social_yt:after {
     background-image: url(../img/social_yt.svg);
     background-size: 20px auto;
 }

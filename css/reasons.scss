@@ -10,13 +10,15 @@
 	min-height: 240px;
 	box-sizing: border-box;
 	outline: 1px solid dodgerblue;
-	padding-bottom: 40px;
 	line-height: 26px;
 	text-align: center;
 	padding-top: 40px;
+	padding-bottom: 40px;
 	padding-left: 30px;
 	padding-right: 30px;
 	background-color: #fff;
+    background-image: url(../img/white.svg);
+    background-repeat: no-repeat;
 }
 
 .reasons__text_26 {
@@ -102,23 +104,26 @@
 
 .feature {
 	padding-left: 70px;
-	padding-top: 25px;
+	padding-top: 26px;
 	text-align: left;
 	padding-bottom: 0px;
     background-repeat: no-repeat;
-    background-size: 40px auto;
+//    background-size: 40px auto;
 }
 
 .feature_hotel {
+    background-position: 20px 15px;
     background-image: url(../img/feature_hotel.svg);
 }
 
 .feature_gift {
     background-image: url(../img/feature_gift.svg);
+    background-position: 25px 15px;
 }
 
 .feature_food {
     background-image: url(../img/feature_food.svg);
+    background-position: 18px 22px;
 }
 
 .feature__title {
