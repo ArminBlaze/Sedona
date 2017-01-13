@@ -89,6 +89,19 @@
 	vertical-align: top;
 	display: block;
 	background-color: #866252;
+	background-repeat: no-repeat;
+}
+
+.reasons__image_city {
+	background-image: url(../img/photo-city@1x.jpg);
+	
+	
+	@media 
+		(-webkit-min-device-pixel-ratio: 1.5),
+		(min-resolution: 144dpi),
+		(min-resolution: 1.5dppx) {
+			background-image: url(../img/photo-city_MOD@2x.jpg);
+	}
 }
 
 .features {
@@ -169,6 +182,7 @@
 	}
 	
 	.reasons__image {
+		width: 66.666%;
 		height: 256px;
 		display: inline-block;
 		vertical-align: top;
