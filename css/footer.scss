@@ -30,19 +30,12 @@
 	margin-right: 6px;
 	background-color: $bg_btn1;
 	cursor: pointer;
-    
-    position: relative;
+  fill: white;
 	
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+	svg {
+		height: 100%;
+	}
+ 
     
 	&:last-child {
 		margin-right: 0;
@@ -55,26 +48,24 @@
 	&:active {
 		background-color: $bg_btn3;
 	}
+	
+	&:active svg {
+		opacity: 0.3;
+	}
     
-    &:active:after {
-        opacity: 0.3;
-    }
     
 }
 
-.social_tw:after {
-    background-image: url(../img/social_tw.svg);
-    background-size: 19px auto;
+.social_tw svg{
+	width: 19px;
 }
 
-.social_fb:after {
-    background-image: url(../img/social_fb.svg);
-    background-size: 9px auto;
+.social_fb svg {
+	width: 9px;
 }
 
-.social_yt:after {
-    background-image: url(../img/social_yt.svg);
-    background-size: 20px auto;
+.social_yt svg {
+	width: 20px;
 }
 
 .socials {
@@ -95,6 +86,16 @@
 	height: 34px;
 	font-size: 10px;
 	margin-left: 10px;
+	fill: black;
+	
+	&:hover {
+		fill: $bg_btn1;
+	}
+	
+	&:active {
+		opacity: 0.3;
+		fill: black;
+	}
 }
 
 @media #{$tabletWidth} { 

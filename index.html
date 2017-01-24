@@ -71,7 +71,8 @@
 						СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
 					</div>
 				</div>
-				<div class="reasons__image reasons__image_city"></div>
+				<div class="reasons__image reasons__image_city">
+				</div>
 			</section>
 			
 			
@@ -180,18 +181,35 @@
 	<div class="footer">
 		<a href="#" class="footer__title footer__item">#VISITSEDONA</a>
 		<div class="socials footer__item">
-			<a href="#" class="social social_tw"></a>
-			<a href="#" class="social social_fb"></a>
-			<a href="#" class="social social_yt"></a>
+			<a href="#" class="social social_tw">
+				<svg width="30" height="40">
+					<use xlink:href="img/sprite.svg#social_tw"></use>
+				</svg>
+			</a>
+			<a href="#" class="social social_fb">
+				<svg width="30" height="40">
+					<use xlink:href="img/sprite.svg#social_fb"></use>
+				</svg>
+			</a>
+			<a href="#" class="social social_yt">
+				<svg width="30" height="40">
+					<use xlink:href="img/sprite.svg#social_yt"></use>
+				</svg>
+			</a>
 		</div>
 		<section class="footer__website footer__item">
-			Разработано <a class="footer__logo" href="#"><img src="img/footer__logo.svg" alt="Logo"></a>
+			Разработано <a class="footer__logo" href="#"><svg width="30" height="40">
+			<use xlink:href="img/sprite.svg#footer__logo"></use>
+		</svg></a>
 		</section>
 	</div>
 	
 	
 	
 	<script src="js/menu.js"></script>
+	
+	<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
 	
 	
 </body>
