@@ -67,6 +67,11 @@
 //	margin: 0 auto;
 	outline: 1px solid lime;
 	text-align: center;
+
+	use {
+		vertical-align: top;
+	}
+	
 }
 
 .mainNav__toggle {

@@ -12,6 +12,9 @@ $bg_btn2: #669ec0;
 $bg_btn3: #5496bd;
 $bg_body: #f2f2f2;
 $font1: 'PT Sans', sans-serif;
+$color1: black;
+$color2: #333;
+$color3: white;
 
 // Settings
 
@@ -101,17 +104,32 @@ img {
 	}
 	
 	
-	img {
-		display: block;
-		margin: 0 auto;
+//	img {
+//		display: block;
+//		margin: 0 auto;
+//		width: 282px;
+//	}
+	
+	svg {
 		width: 282px;
+		height: 214px;
 	}
 }
 
-
 .intro__header_photo {
 	padding-top: 50px;
+//	padding-top: 0;
 	min-height: 159px;
+//	height: 159px;
+	background-position: center 65%;
+	background-size: 280% auto;
+	
+	svg {
+		width: 229px;
+		height: 39px;
+		vertical-align: top;
+		
+	}
 }
 
 @media #{$tabletWidth} { 
@@ -121,15 +139,27 @@ img {
 //		padding-top: ;
 	}
 	
+	.intro__header svg {
+		width: 460px;
+		height: 350px;
+	}
+	
 	.intro__header_photo {
 		padding-top: 95px;
+//		padding-top: 0;
 		min-height: 291px;
+		
+		svg {
+			height: 78px;
+		}
 	}
     
-    .intro__header img {
-        width: 460px;
-        margin: 0 auto;
-    }
+//	.intro__header img {
+//			width: 460px;
+//			margin: 0 auto;
+//	}
+	
+	
 	
 }
 

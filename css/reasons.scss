@@ -38,7 +38,7 @@
 }
 
 .reasons__item_blue {
-	color: white;
+	color: $color3;
 	padding-bottom: 38px;
 	background-color: $bg2;
 	
@@ -61,14 +61,17 @@
 	}
 }
 
-
-
 .reasons__title {
 	font-size: 18px;
 	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	color: $color1;
+}
+
+.reasons__title_inherit {
+	color: inherit;
 }
 
 .reasons__title_margin {
@@ -164,6 +167,7 @@
 	text-transform: uppercase;
 //	margin-bottom: 10px;
 	margin-top: 0px;
+	color: $color1;
 }
 
 .reasons__hidden {

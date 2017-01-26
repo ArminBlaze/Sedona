@@ -27,6 +27,7 @@
 	line-height: 26px;
 	font-weight: 700;
 	margin-bottom: 27px;
+	color: $color1;
 }
 
 .photo {
@@ -40,12 +41,14 @@
 .photo__title {
 	font-weight: 700;
 	text-transform: uppercase;
+	color: $color1;
 }
 
 .photo__like {
 	font-weight: 700;
 	padding-left: 35px;
 	margin-top: 5px;
+	color: $color1;
 }
 
 .photo__image {
@@ -164,7 +167,7 @@
 		bottom: 0;
 		width: 100%;
 		background-color: rgba(black, 0.3);
-		color: white;
+		color: $color3;
 	}
 	
 	.photo_top {

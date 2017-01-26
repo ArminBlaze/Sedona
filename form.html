@@ -15,11 +15,14 @@
 	<header class="mainHeader">
 		
 		<div class="mainHeader__logo">
-			<img src="img/logo.svg" width="103" height="82" alt="Sedona">
+			<picture>
+				<source media="(min-width: 1200px)" srcset="img/logo_desktop.svg">
+				<img src="img/logo.svg" width="103" height="82" alt="Sedona">
+			</picture>
 		</div>
 	
 	
-		<nav class="mainNav mainNav_closed mainNav_nojs">
+		<nav class="mainNav mainNav_opened mainNav_nojs">
 		<a class="mainNav__toggle"></a>
 			<div class="mainNav__wrapper">
 				<ul class="mainNav__list">
@@ -41,7 +44,9 @@
 	<main class="content">
 		<section class="intro">
 			<div class="intro__header intro__header_photo">
-				<img src="img/text-sedona.svg" alt="Sedona">
+				<svg>
+				<use xlink:href="#intro_text"></use>
+				</svg>
 			</div>
 			
 		</section>
@@ -144,21 +149,38 @@
 	
 	
 	
-	<div class="footer">
-		<div class="footer__title footer__item">#VISITSEDONA</div>
+		<div class="footer">
+		<a href="#" class="footer__title footer__item">#VISITSEDONA</a>
 		<div class="socials footer__item">
-			<div class="social social_tw"></div>
-			<div class="social social_fb"></div>
-			<div class="social social_yt"></div>
+			<a href="#" class="social social_tw">
+				<svg width="30" height="40">
+					<use xlink:href="#social_tw"></use>
+				</svg>
+			</a>
+			<a href="#" class="social social_fb">
+				<svg width="30" height="40">
+					<use xlink:href="#social_fb"></use>
+				</svg>
+			</a>
+			<a href="#" class="social social_yt">
+				<svg width="30" height="40">
+					<use xlink:href="#social_yt"></use>
+				</svg>
+			</a>
 		</div>
 		<section class="footer__website footer__item">
-			Разработано <a class="footer__logo" href="#"><img src="" alt="Logo"></a>
+			Разработано <a class="footer__logo" href="#"><svg width="30" height="40">
+			<use xlink:href="#footer__logo"></use>
+			</svg></a>
 		</section>
 	</div>
 	
 	
 	<script src="js/menu.js"></script>
 	
+	<script src="js/localStorage.js">
+//		https://osvaldas.info/caching-svg-sprite-in-localstorage
+	</script>
 	
 </body>
 </html>
