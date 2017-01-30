@@ -190,7 +190,6 @@
 		padding-right: 50px;
 		padding-bottom: 45px;
 		min-height: 256px;
-		
 	}
 	
 	.reasons__header {
@@ -229,23 +228,31 @@
 	.feature {
 		padding-top: 160px;
 		text-align: center;
+		background-position: center 60px;
+		background-size: 75px 72px;
 	}
 	
-	.feature__title {
-		font-size: 21px;
-		
+	.feature_food {
+		background-position: center 63px;
+		background-size: 77px 68px;
 	}
 	
 	.feature_gift {
+		background-position: center 57px;
+		background-size: 64px 75px;
+		
 		float: right;
 		padding-left: 45px;
 		padding-right: 45px;
 	}
 	
+	.feature__title {
+		font-size: 21px;
+	}
+	
 	.feature__hidden {
 		display: none;
 	}
-	
 	
 	.reasons__item_right {
 		float: right;
@@ -275,9 +282,6 @@
 	
 	.reasons__image {
 		background-size: cover;
-	}
-	
-	.reasons__item_blue {
 	}
 	
 	.reasons__header {

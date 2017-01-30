@@ -14,11 +14,6 @@
 			<g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><path d="M17.14,0H2.83A2.84,2.84,0,0,0,0,2.83v8.35A2.84,2.84,0,0,0,2.83,14H17.14A2.84,2.84,0,0,0,20,11.18V2.83A2.84,2.84,0,0,0,17.14,0ZM7,10.39V3.62L13.8,7Z" fill="white"/></g></g>
 		</symbol>
 	
-		<symbol id="video_forward" viewBox="0 0 30 22.36" width="30" height="22">
-			<title>video_forward</title>
-			<g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><polygon class="video_forward-1" points="30 11.18 10.13 0 10.13 5.7 0 0 0 22.36 10.13 16.66 10.13 22.36 30 11.18"/></g></g>
-		</symbol>
-	
 		<symbol id="footer__logo" viewBox="0 0 154.38 195.33">
 			<defs><style>.footer__logo-1{stroke:#231f20;stroke-miterlimit:10;}</style></defs>
 			<title>icon_academy</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><path class="footer__logo-1" d="M78,.59,77.19.5.5,8.54V149.11l76.69,45.63,76.69-45.63V8.54Zm65.86,142.82L77.19,183.07,10.53,143.41V85.79L76.91,125.3l.11,7.16-45.53-27.1-.07,7,45.71,27.47.11,7.35-45.7-27.19-.07,7,45.71,27.47,46.15-27.62v-7l-.06,0V97.1l20.57-12.28Zm-.05-66.06L125.56,88.09l-8.42,5L77,69.17l-.07,7,34.32,20.41-.3.18-.74.44L105.33,100,77,83.16l-.07,7,22.36,13.3L94,106.94l-.13.08L77,97.06l-.07,7L88,110.54l-11.29,6.78-66-39.26L76.82,38.31h0Zm.05-7-67-39.51h0L10.53,70.31V17.58l66.66-7,66.66,7Z"/></g></g>
@@ -53,6 +48,11 @@
 	
 		<symbol id="video_rewind" viewBox="0 0 30 22.36" width="30" height="22">
 			<title>video_rewind</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><polygon class="video_rewind-1" points="0 11.18 19.87 0 19.87 5.7 30 0 30 22.36 19.87 16.66 19.87 22.36 0 11.18"/></g></g>
+		</symbol>
+	
+		<symbol id="video_forward" viewBox="0 0 30 22.36" width="30" height="22">
+			<title>video_forward</title>
+			<g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><polygon class="video_forward-1" points="30 11.18 10.13 0 10.13 5.7 0 0 0 22.36 10.13 16.66 10.13 22.36 30 11.18"/></g></g>
 		</symbol>
 	
 		<symbol id="video_subtitle" viewBox="0 0 32 20" width="32" height="20">
