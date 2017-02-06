@@ -63,7 +63,15 @@
 			
 			<div class="photos__list">
 				<div class="photo photo_top">
-					<div class="photo__image"></div>
+					<div class="photo__image">
+						<picture>
+							<source media="(min-width: 1200px)" 
+											srcset="img/photo-1-desktop.jpg">
+							<source media="(min-width: 768px)" 
+											srcset="img/photo-1-tablet.jpg">
+							<img src="img/photo-1-mobile.jpg" alt="Дорога в закат">
+						</picture>
+					</div>
 					<div class="photo__footer">
 						<div class="photo__title">Неродные просторы</div>
 						<div class="photo__author">Автор фото: <span>Борис</span></div>
@@ -71,7 +79,15 @@
 					</div>
 				</div>
 				<div class="photo">
-					<div class="photo__image"></div>
+					<div class="photo__image">
+						<picture>
+							<source media="(min-width: 1200px)" 
+											srcset="img/photo-2-desktop.jpg">
+							<source media="(min-width: 768px)" 
+											srcset="img/photo-2-tablet.jpg">
+							<img src="img/photo-2-mobile.jpg" alt="Дорога в закат">
+						</picture>
+					</div>
 					<div class="photo__footer">
 						<div class="photo__title">Местная растительность</div>
 						<div class="photo__author">Автор фото: <span>Сергей</span></div>
@@ -79,7 +95,15 @@
 					</div>
 				</div>
 				<div class="photo">
-					<div class="photo__image"></div>
+					<div class="photo__image">
+						<picture>
+							<source media="(min-width: 1200px)" 
+											srcset="img/photo-3-desktop.jpg">
+							<source media="(min-width: 768px)" 
+											srcset="img/photo-3-tablet.jpg">
+							<img src="img/photo-3-mobile.jpg" alt="Дорога в закат">
+						</picture>
+					</div>
 					<div class="photo__footer">
 						<div class="photo__title">Дорога на север</div>
 						<div class="photo__author">Автор фото: <span>Петр</span></div>
@@ -87,7 +111,15 @@
 					</div>
 				</div>
 				<div class="photo">
-					<div class="photo__image"></div>
+					<div class="photo__image">
+						<picture>
+							<source media="(min-width: 1200px)" 
+											srcset="img/photo-4-desktop.jpg">
+							<source media="(min-width: 768px)" 
+											srcset="img/photo-4-tablet.jpg">
+							<img src="img/photo-4-mobile.jpg" alt="Дорога в закат">
+						</picture>
+					</div>
 					<div class="photo__footer">
 						<div class="photo__title">Мост дьявола</div>
 						<div class="photo__author">Автор фото: <span>Антон</span></div>
@@ -106,6 +138,50 @@
 				</div>
 				
 				<div class="video">
+					
+					
+					<video class="my_video" width="320" height="201" preload="none">
+						<source src="video/mikethefrog.mp4"
+						type="video/mp4" />
+						<source src="video/mikethefrog.webm"
+						type="video/webm" />
+						<source src="video/mikethefrog.ogv"
+						type="video/ogg" />
+						<p>Please update your browser to watch this video</p>
+					</video>
+					
+				<!-- Video Controls -->
+				
+					<div class="video__controls">
+					
+<!--						<button class="video__pause video__btn"></button>-->
+						
+						<button class="video__replay video__btn">
+							<svg width="16" height="20">
+								<use xlink:href="#video_replay"></use>
+							</svg>
+						</button>
+						
+						<div class="video__seekWrapper">
+							<div class="video__seek">
+								<div class="video__scale">
+									<div class="video__bar"></div>
+								</div>
+							</div>
+						</div>
+						
+						<button class="video__subtitle video__btn">
+							<svg width="32" height="20">
+								<use xlink:href="#video_subtitle"></use>
+							</svg>
+						</button>
+				    <button class="fullscreenbtn video__btn">
+				    	<svg width="20" height="20">
+								<use xlink:href="#video_fullscreen"></use>
+							</svg>
+				    </button>
+					</div>
+					
 					
 				</div>
 			</div>
@@ -159,6 +235,8 @@
 	<script src="js/localStorage.js">
 //		https://osvaldas.info/caching-svg-sprite-in-localstorage
 	</script>
+	
+	<script src="js/video.js"></script>
 	
 </body>
 </html>
