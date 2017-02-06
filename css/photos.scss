@@ -1,5 +1,4 @@
 .photos {
-//	outline: 2px solid lime;
 	font-size: 14px;
 	line-height: 24px;
 	padding-bottom: 40px;
@@ -10,7 +9,7 @@
 //	min-height: 190px;
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 35px;
+	padding-top: 37px;
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-bottom: 26px;
@@ -19,6 +18,7 @@
 
 .photos__header_video {
 	border: none;
+	padding-top: 33px;
 	padding-bottom: 35px;
 }
 
@@ -35,6 +35,7 @@
 	box-sizing: border-box;
 	padding: 20px;
 	padding-top: 22px;
+	padding-bottom: 15px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -46,15 +47,28 @@
 
 .photo__like {
 	font-weight: 700;
-	padding-left: 35px;
-	margin-top: 5px;
+//	padding-left: 35px;
+	margin-top: 8px;
 	color: $color1;
+	line-height: 24px;
+	
+	svg {
+		opacity: 0.3;
+		margin-right: 10px;
+		width: 23px;
+		height: 20px;
+//		padding-top: 3px;
+		vertical-align: top;
+	}
+	
+	&:hover svg {
+		opacity: 1;
+	}
 }
 
 .photo__image {
 	width: 280px;
 	height: 280px;
-	outline: 1px solid gold;
 }
 
 .photo__footer {
@@ -63,7 +77,6 @@
 
 .video {
 	min-height: 268px;
-	outline: 1px solid;
 	position: relative;
 }
 
@@ -158,7 +171,6 @@
 .video__btn {
 	background-color: transparent;
 	border: none;
-//	outline: 1px solid black;
 	padding: 0;
 	fill: #5c6870;
 	vertical-align: top;
@@ -245,13 +257,13 @@
 	
 	.photo {
 		padding: 0;
-		outline: 1px solid red;
 		width: 324px;
 		min-height: 347px;
 		display: inline-block;
 		vertical-align: top;
 		font-size: 14px;
 		line-height: 24px;
+		border: none;
 	}
 	
 	.photo__image {
@@ -263,19 +275,27 @@
 		box-sizing: border-box;
 		min-height: 80px;
 		position: relative;
-		outline: 1px solid lime;
 		padding-left: 20px;
+		background-color: $bg_body;
+	}
+	
+	.photo:nth-child(odd):not(:first-child) .photo__footer{
+		background-color: #eaeaea;
 	}
 	
 	.photo__like {
 		box-sizing: border-box;
 		position: absolute;
 		right: 0px;
-		top: 25px;
-		min-width: 85px;
-		padding-left: 30px;
-		padding-right: 20px;
-		text-align: left;
+		top: 19px;
+		min-width: 84px;
+//		padding-left: 30px;
+//		padding-right: 20px;
+//		text-align: left;
+		
+		svg {
+			margin-right: 5px;
+		}
 	}
 	
 	.photo_top {
@@ -321,7 +341,6 @@
 		display: inline-block;
 		vertical-align: middle;
 		background-color: transparent;
-//		outline: 1px solid white;
 	}
 	
 	.video__seek {
@@ -330,7 +349,6 @@
 	
 	.video__btn {
 		fill: white;
-		opacity: 0.7;
 		display: inline-block;
 		margin: 0;
 //		padding: 20px;
