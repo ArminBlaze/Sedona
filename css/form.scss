@@ -21,6 +21,10 @@
 	line-height: 24px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+	
+	br {
+		display: none;
+	}
 }
 
 .form {
@@ -112,6 +116,7 @@
 	line-height: 26px;
 	margin-bottom: 11px;
 	flex-direction: column;
+	position: relative;
 }
 
 .form__label_click {
@@ -236,7 +241,6 @@
 	}
 }
 
-
 .form__item_contacts {
 //	min-height: 317px;
 	padding-bottom: 15px;
@@ -251,13 +255,12 @@
 	color: #ff5c5c;
 	margin: 0;
 	margin-top: 5px;
-	width: 100%;
+//	width: 100%;
 }
 
 .form__error_email {
 	display: none;
 }
-
 
 .form__input_hidden {
 	display: none;
@@ -281,6 +284,7 @@
 		position: relative;
 		margin-left: 60px;
 		margin-right: 60px;
+		padding-bottom: 60px;
 	}
 	
 	.form__header {
@@ -288,6 +292,13 @@
 		margin: 0 auto;
 		padding-top: 57px;
 		margin-bottom: 454px;
+	}
+	
+	.form__text {
+
+		br {
+			display: block;
+		}
 	}
 	
 	.form__title {
@@ -303,7 +314,6 @@
 		font-size: 30px;
 		margin-top: 17px;
 		margin-bottom: 30px;
-		
 	}
 	
 	.form__title_left {
@@ -311,7 +321,6 @@
 		text-align: left;
 		margin: 0;
 		margin-bottom: 57px;
-		
 	}
 	
 	.form__item {
@@ -369,6 +378,7 @@
 	.form__error {
 		position: absolute;
 		right: 0;
+		left: auto;
 		top: -5px;
 	}
 	
@@ -422,9 +432,7 @@
 		bottom: 15px;
 	}
 	
-	.form {
-		margin-bottom: 60px;
-	}
+	
 }
 
 @media #{$desktopWidth} {

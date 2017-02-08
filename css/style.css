@@ -1323,6 +1323,8 @@ template {
   line-height: 24px;
   margin-bottom: 20px;
   text-transform: uppercase; }
+  .form__text br {
+    display: none; }
 
 .form {
   font-size: 18px;
@@ -1394,7 +1396,8 @@ template {
   margin-bottom: 11px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .form__label_click {
   font-weight: 700;
@@ -1489,8 +1492,7 @@ template {
   text-transform: none;
   color: #ff5c5c;
   margin: 0;
-  margin-top: 5px;
-  width: 100%; }
+  margin-top: 5px; }
 
 .form__error_email {
   display: none; }
@@ -1511,12 +1513,15 @@ template {
   .form {
     position: relative;
     margin-left: 60px;
-    margin-right: 60px; }
+    margin-right: 60px;
+    padding-bottom: 60px; }
   .form__header {
     width: 460px;
     margin: 0 auto;
     padding-top: 57px;
     margin-bottom: 454px; }
+  .form__text br {
+    display: block; }
   .form__title {
     font-size: 21px;
     width: 400px;
@@ -1573,6 +1578,7 @@ template {
   .form__error {
     position: absolute;
     right: 0;
+    left: auto;
     top: -5px; }
   .form__label_contacts {
     margin-bottom: 23px; }
@@ -1603,9 +1609,7 @@ template {
     text-transform: uppercase;
     position: absolute;
     right: 0;
-    bottom: 15px; }
-  .form {
-    margin-bottom: 60px; } }
+    bottom: 15px; } }
 
 @media (min-width: 1200px) {
   .form {
