@@ -2,7 +2,6 @@
 .mainHeader {
 	@include container;
 	padding-bottom: 56px;
-//	outline: 1px solid red;
 //	min-height: 279px;
 	position: relative;
 	z-index: 2;
@@ -19,7 +18,6 @@
 
 .mainNav__item {
 	text-align: center;
-//	outline: 1px solid black;
 }
 
 .mainNav__item a {
@@ -65,7 +63,6 @@
 	width: 140px;
 	height: 56px;
 //	margin: 0 auto;
-	outline: 1px solid lime;
 	text-align: center;
 
 	use {
@@ -81,7 +78,6 @@
 	height: 56px;
 	cursor: pointer;
 	z-index: 10;
-//	outline: 1px solid white;
 	
 
 }
@@ -168,7 +164,6 @@
 		font-size: 14px;
 		width: calc(100% / 5);
 //		background-color: red;
-		outline: none;
 	}
 	
 	.mainNav__item a {

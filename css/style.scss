@@ -86,12 +86,14 @@ img {
 
 .intro__header {
 	box-sizing: border-box;
+	position: relative;
 	padding-top: 90px;
 	padding-bottom: 29px;
 	min-height: 389px;
 	text-align: center;
 	background-color: #9bb0c0;
 	background-size: auto 155%;
+//	background-size: auto 375px;
 	background-position: center 26%;
 	background-repeat: no-repeat;
 	background-image: url(../img/intro_background@1x.jpg);
@@ -102,6 +104,20 @@ img {
 		(min-resolution: 1.5dppx) {
 			background-image: url(../img/intro_background_MOD@2x.jpg);
 	}
+	
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 57px;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: auto 57px;
+		background-position: center bottom;
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199.91 57"><defs><style>.cls-1{fill:#fff;}</style></defs><title>intro_bottom</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="249.57 23.71 0 0 0 57 249.57 57 599.96 57 249.57 0 249.57 23.71"/><polygon class="cls-1" points="950.35 23.71 950.35 0 599.96 57 950.35 57 1199.91 57 1199.91 0 950.35 23.71"/></g></g></svg>');
+	}
+	
 	
 	
 //	img {
@@ -135,8 +151,10 @@ img {
 @media #{$tabletWidth} { 
 	.intro__header {
 		padding-top: 75px;
-		min-height: 520px;
+		min-height: 518px;
 //		padding-top: ;
+		background-size: 1200px;
+		background-position: center 27%;
 	}
 	
 	.intro__header svg {

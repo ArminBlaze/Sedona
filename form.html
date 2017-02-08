@@ -17,6 +17,7 @@
 		<div class="mainHeader__logo">
 			<picture>
 				<source media="(min-width: 1200px)" srcset="img/logo_desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
 				<img src="img/logo.svg" width="103" height="82" alt="Sedona">
 			</picture>
 		</div>
@@ -79,14 +80,14 @@
 					<div class="form__title form__title_contacts">Контактная информация:</div>
 					<label for="tel" class="form__label form__label_contacts form__label_tel">
 						<span class="form__caption form__caption_contacts"><span class="form__caption_desktop">Контактный </span>телефон: </span>
-						<input class="form__input form__input_contacts" id="tel" type="tel" placeholder="Введите телефон">
+						<span class="form__inputWrapper form__inputWrapper_tel"><input class="form__input form__input_contacts form__input_tel" id="tel" type="tel" placeholder="Введите телефон"></span>
 						<label for="tel" class="form__caption form__caption_contacts form__error form__error_tel">
 						Ошибка, перепроверьте номер
 						</label>
 					</label>
 					<label for="email" class="form__label form__label_contacts form__label_email">
 						<span class="form__caption form__caption_contacts">Электронная почта: </span>
-						<input class="form__input form__input_contacts" id="email" type="email" placeholder="Введите e-mail">
+						<span class="form__inputWrapper form__inputWrapper_email"><input class="form__input form__input_contacts form__input_email" id="email" type="email" placeholder="Введите e-mail"></span>
 						<label for="email" class="form__caption form__caption_contacts form__error form__error_email">
 						Ошибка, перепроверьте адрес
 						</label>

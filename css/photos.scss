@@ -279,7 +279,7 @@
 		background-color: $bg_body;
 	}
 	
-	.photo:nth-child(odd):not(:first-child) .photo__footer{
+	.photo:nth-child(odd):not(:first-child) .photo__footer {
 		background-color: #eaeaea;
 	}
 	
@@ -397,6 +397,25 @@
 		width: 100%;
 		background-color: rgba(black, 0.3);
 		color: $color3;
+	}
+	
+	.photo:nth-child(odd):not(:first-child) .photo__footer {
+		background-color: rgba(black, 0.3);
+	}
+	
+	.photo__title {
+		color: $color3;
+	}
+	
+	.photo__like {
+		color: $color3;
+		
+		svg {
+			fill: white;
+//			stroke: green;
+			opacity: 1;
+		}
+		
 	}
 	
 	.photo_top {

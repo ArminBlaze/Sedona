@@ -499,7 +499,6 @@ template {
   margin-left: -70px;
   width: 140px;
   height: 56px;
-  outline: 1px solid lime;
   text-align: center; }
   .mainHeader__logo use {
     vertical-align: top; }
@@ -570,8 +569,7 @@ template {
   .mainNav__item {
     display: inline-block;
     font-size: 14px;
-    width: calc(100% / 5);
-    outline: none; }
+    width: calc(100% / 5); }
   .mainNav__item a {
     color: black;
     background-color: transparent;
@@ -605,7 +603,6 @@ template {
     height: auto; } }
 
 .reasons {
-  outline: 1px solid lime;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px; }
@@ -613,7 +610,6 @@ template {
 .reasons__header {
   min-height: 240px;
   box-sizing: border-box;
-  outline: 1px solid dodgerblue;
   line-height: 26px;
   text-align: center;
   padding-top: 40px;
@@ -621,8 +617,20 @@ template {
   padding-left: 30px;
   padding-right: 30px;
   background-color: #fff;
-  background-image: url(../img/white.svg);
-  background-repeat: no-repeat; }
+  position: relative;
+  overflow: hidden; }
+  .reasons__header:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -384px;
+    border-left: 384px solid #81b3d2;
+    border-right: 384px solid #81b3d2;
+    border-top: 37px solid transparent;
+    box-sizing: border-box; }
 
 .reasons__text_26 {
   line-height: 26px; }
@@ -698,7 +706,6 @@ template {
 .features {
   box-sizing: border-box;
   min-height: 416px;
-  outline: 1px solid black;
   padding-top: 1px;
   margin: 0;
   padding: 0;
@@ -759,12 +766,15 @@ template {
     width: 500px;
     margin: 0 auto;
     display: block; }
+    .reasons__header:after {
+      content: none; }
   .reasons__image {
-    width: 66.666%;
+    width: 66.6666%;
     height: 256px;
     display: inline-block;
-    vertical-align: top;
-    outline: 1px solid yellow; }
+    vertical-align: top; }
+  .reasons__image_bridge {
+    float: left; }
   .reasons__title {
     font-size: 21px; }
   .reasons__text {
@@ -793,7 +803,6 @@ template {
   .feature__hidden {
     display: none; }
   .reasons__item_right {
-    float: right;
     padding-left: 39px;
     padding-right: 39px; }
   .reasons__hidden {
@@ -953,8 +962,7 @@ template {
 .footer__website {
   font-size: 14px;
   line-height: 34px;
-  text-transform: uppercase;
-  outline: 1px solid black; }
+  text-transform: uppercase; }
 
 .footer__logo {
   display: inline-block;
@@ -1273,6 +1281,15 @@ template {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: white; }
+  .photo:nth-child(odd):not(:first-child) .photo__footer {
+    background-color: rgba(0, 0, 0, 0.3); }
+  .photo__title {
+    color: white; }
+  .photo__like {
+    color: white; }
+    .photo__like svg {
+      fill: white;
+      opacity: 1; }
   .photo_top {
     width: 100%; }
   .photos__header_video {
@@ -1298,7 +1315,8 @@ template {
   margin-top: 17px;
   margin-bottom: 20px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: black; }
 
 .form__text {
   font-size: 14px;
@@ -1309,15 +1327,15 @@ template {
 .form {
   font-size: 18px;
   line-height: 26px;
-  outline: 1px solid dodgerblue;
   background-color: #fff;
-  margin-bottom: 30px; }
+  padding-bottom: 30px; }
 
 .form__item {
   box-sizing: border-box;
   padding: 0 20px;
   padding-bottom: 5px;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  color: black; }
 
 .form__item_impression {
   padding-bottom: 15px; }
@@ -1328,7 +1346,6 @@ template {
   margin: 0;
   border: none;
   box-sizing: border-box;
-  outline: 1px solid dodgerblue;
   background-color: #f2f2f2;
   color: black;
   font-family: "PT Sans", sans-serif;
@@ -1337,10 +1354,15 @@ template {
   text-transform: none;
   min-width: 0; }
 
+.form__input_name {
+  margin-left: 18px; }
+
 .form__input_emotions {
   width: 100%;
   height: 160px;
-  resize: none; }
+  resize: none;
+  line-height: 26px;
+  padding: 15px 20px; }
 
 .form__input::-webkit-input-placeholder {
   color: black; }
@@ -1356,7 +1378,6 @@ template {
   opacity: 1; }
 
 .form__label {
-  display: block;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
@@ -1370,7 +1391,10 @@ template {
 
 .form__label_contacts {
   line-height: 26px;
-  margin-bottom: 11px; }
+  margin-bottom: 11px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .form__label_click {
   font-weight: 700;
@@ -1397,6 +1421,12 @@ template {
     background-color: #333;
     left: 17px;
     top: 17px; }
+  .form__label_click:hover:before {
+    background-color: #e5e5e5; }
+  .form__label_click:active:before {
+    background-color: #d5d5d5; }
+  .form__label_click:active:after {
+    opacity: 0.3; }
 
 .form__label_radio:before {
   border-radius: 50%; }
@@ -1408,6 +1438,11 @@ template {
   margin-bottom: 24px; }
   .form__label_checkbox:before {
     border-radius: 5px; }
+  .form__label_checkbox:after {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_tick" viewBox="0 0 23.05 16.25"><defs><style>.form_tick-1{fill:#231f20;}</style></defs><path class="form_tick-1" d="M22.8,1.3,21.75.25a.85.85,0,0,0-1.2,0L8.69,12.1,2.5,5.91a.85.85,0,0,0-1.2,0L.25,7a.85.85,0,0,0,0,1.2L8.09,16A.87.87,0,0,0,9.3,16L22.8,2.5A.85.85,0,0,0,22.8,1.3Z"/></svg>'); }
 
 .form__caption {
   font-size: 14px;
@@ -1420,7 +1455,29 @@ template {
 
 .form__input_contacts {
   float: none;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+.form__inputWrapper {
+  position: relative; }
+  .form__inputWrapper:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.form__inputWrapper_tel:before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_phone" viewBox="0 0 18 18" width="18" height="18"><defs><style>.form_phone-1{fill:#010101;}</style></defs><title>form_phone</title><path id="Shape" class="form_phone-1" d="M3.6,7.8a15.57,15.57,0,0,0,6.6,6.6l2.2-2.2a.8.8,0,0,1,1-.2,10.45,10.45,0,0,0,3.6.6,1,1,0,0,1,1,1V17a1,1,0,0,1-1,1A17,17,0,0,1,0,1,.94.94,0,0,1,1,0H4.5a.94.94,0,0,1,1,1,11.33,11.33,0,0,0,.6,3.6,1.23,1.23,0,0,1-.2,1L3.6,7.8Z"/></svg>'); }
+
+.form__inputWrapper_email:before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_mail" viewBox="0 0 16 12" width="16" height="12"><title>form_mail</title><path d="M8,10a2.32,2.32,0,0,1-1-.34L0,6v7a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6L9,9.66A2.32,2.32,0,0,1,8,10Zm7-8H1A1,1,0,0,0,0,3v.76L8,8l8-4.21V3A1,1,0,0,0,15,2Z" transform="translate(0 -2)"/></svg>'); }
 
 .form__item_contacts {
   padding-bottom: 15px; }
@@ -1432,7 +1489,8 @@ template {
   text-transform: none;
   color: #ff5c5c;
   margin: 0;
-  margin-top: 5px; }
+  margin-top: 5px;
+  width: 100%; }
 
 .form__error_email {
   display: none; }
@@ -1619,6 +1677,7 @@ template {
 
 .intro__header {
   box-sizing: border-box;
+  position: relative;
   padding-top: 90px;
   padding-bottom: 29px;
   min-height: 389px;
@@ -1631,6 +1690,17 @@ template {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro__header {
       background-image: url(../img/intro_background_MOD@2x.jpg); } }
+  .intro__header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: auto 57px;
+    background-position: center bottom;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199.91 57"><defs><style>.cls-1{fill:#fff;}</style></defs><title>intro_bottom</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="249.57 23.71 0 0 0 57 249.57 57 599.96 57 249.57 0 249.57 23.71"/><polygon class="cls-1" points="950.35 23.71 950.35 0 599.96 57 950.35 57 1199.91 57 1199.91 0 950.35 23.71"/></g></g></svg>'); }
   .intro__header svg {
     width: 282px;
     height: 214px; }
@@ -1648,7 +1718,9 @@ template {
 @media (min-width: 768px) {
   .intro__header {
     padding-top: 75px;
-    min-height: 520px; }
+    min-height: 518px;
+    background-size: 1200px;
+    background-position: center 27%; }
   .intro__header svg {
     width: 460px;
     height: 350px; }
