@@ -64,11 +64,11 @@
 					
 					<label for="name" class="form__label">
 					<span class="form__caption">Имя:</span>
-						<input type="text" class="form__input form__input_name" placeholder="Петр">
+						<input type="text" class="form__input form__input_name" placeholder="Петр" required>
 					</label>
 					<label for="surname" class="form__label">
 					<span class="form__caption">Фамилия:</span>
-						<input type="text" class="form__input form__input_name form__input_surname" placeholder="Иванов">
+						<input type="text" class="form__input form__input_name form__input_surname" placeholder="Иванов" required>
 					</label>
 					<label for="patronymic" class="form__label">
 					<span class="form__caption">Отчество:</span>
@@ -80,17 +80,17 @@
 					<div class="form__title form__title_contacts">Контактная информация:</div>
 					<label for="tel" class="form__label form__label_contacts form__label_tel">
 						<span class="form__caption form__caption_contacts"><span class="form__caption_desktop">Контактный </span>телефон: </span>
-						<span class="form__inputWrapper form__inputWrapper_tel"><input class="form__input form__input_contacts form__input_tel" id="tel" type="tel" placeholder="Введите телефон"></span>
+						<span class="form__inputWrapper form__inputWrapper_tel"><input class="form__input form__input_contacts form__input_tel" id="tel" type="tel" placeholder="Введите телефон" required></span>
 						<span class="form__caption form__caption_contacts form__error form__error_tel">
 						Ошибка, перепроверьте номер
 						</span>
 					</label>
 					<label for="email" class="form__label form__label_contacts form__label_email">
 						<span class="form__caption form__caption_contacts">Электронная почта: </span>
-						<span class="form__inputWrapper form__inputWrapper_email"><input class="form__input form__input_contacts form__input_email" id="email" type="email" placeholder="Введите e-mail"></span>
-						<label for="email" class="form__caption form__caption_contacts form__error form__error_email">
+						<span class="form__inputWrapper form__inputWrapper_email"><input class="form__input form__input_contacts form__input_email" id="email" type="email" placeholder="Введите e-mail" required></span>
+						<span for="email" class="form__caption form__caption_contacts form__error form__error_email">
 						Ошибка, перепроверьте адрес
-						</label>
+						</span>
 					</label>
 					
 				</div>
