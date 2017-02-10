@@ -575,3 +575,9 @@
 
 
 
+
+.modal {
+	@include container;
+	background-color: $bg1;
+	box-shadow: 0 7px 15px rgba(black, 0.15);
+}

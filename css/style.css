@@ -499,7 +499,8 @@ template {
   margin-left: -70px;
   width: 140px;
   height: 56px;
-  text-align: center; }
+  text-align: center;
+  z-index: 10; }
   .mainHeader__logo use {
     vertical-align: top; }
 
@@ -1696,6 +1697,18 @@ template {
     margin-right: 70px; }
   .form__btn {
     width: 480px; } }
+
+.modal {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15); }
+  @media (min-width: 768px) {
+    .modal {
+      width: 768px; } }
+  @media (min-width: 1200px) {
+    .modal {
+      width: 1200px; } }
 
 .content {
   width: 320px;

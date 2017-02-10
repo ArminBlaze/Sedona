@@ -15,11 +15,13 @@
 	<header class="mainHeader">
 		
 		<div class="mainHeader__logo">
-			<picture>
-				<source media="(min-width: 1200px)" srcset="img/logo_desktop.svg">
-				<source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-				<img src="img/logo.svg" width="103" height="82" alt="Sedona">
-			</picture>
+			<a href="index.html">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo_desktop.svg">
+					<source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
+					<img src="img/logo.svg" width="103" height="82" alt="Sedona">
+				</picture>
+			</a>
 		</div>
 	
 	
@@ -27,11 +29,11 @@
 		<a class="mainNav__toggle"></a>
 			<div class="mainNav__wrapper">
 				<ul class="mainNav__list">
-					<li class="mainNav__item mainNav__item_active"><a>Главная</a></li>
-					<li class="mainNav__item"><a href="#">Фото и видео</a></li>
+					<li class="mainNav__item"><a href="index.html">Главная</a></li>
+					<li class="mainNav__item"><a href="photo.html">Фото и видео</a></li>
 					<li class="mainNav__item mainNav__item_hidden">
 					</li>
-					<li class="mainNav__item"><a href="#">Форма отзыва</a></li>
+					<li class="mainNav__item  mainNav__item_active"><a>Форма отзыва</a></li>
 					<li class="mainNav__item"><a href="#">HTML Academy</a></li>
 				</ul>
 			</div>
@@ -175,6 +177,16 @@
 			</svg></a>
 		</section>
 	</div>
+	
+	
+	
+	<div class="modal modal_failure">
+  	<h3 class="form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+  	<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  	
+		<button type="submit" class="btn btn-2">ОК</button>
+  </div>
+	
 	
 	
 	<script src="js/menu.js"></script>
