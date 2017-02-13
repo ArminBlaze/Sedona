@@ -722,14 +722,14 @@ template {
 
 .feature_hotel {
   background-position: 20px 15px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.7 72.35" width="39" height="37"><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1"  fill="#81b3d2"><path d="M29.5,65.34h16V41.41h-16V65.34Zm13.06-2.94H32.44V44.34H42.57Z"/><path d="M72.62,39.44l2.08-2.08-9.91-9.91V.47H51V13.63L37.35,0,0,37.36l2.08,2.08,7.83-7.83v37.8H6v2.94H69.85V69.41H64.79V31.61Zm-18.71-36h7.94v21.1l-7.94-7.94Zm7.94,66h-49V28.67l24.5-24.5,24.5,24.5Z"/><path d="M29.75,27.21a7.75,7.75,0,1,0,7.75-7.75A7.75,7.75,0,0,0,29.75,27.21Zm7.75-5a5,5,0,1,1-5,5A5,5,0,0,1,37.5,22.24Z"/><rect x="16.91" y="41.41" width="3" height="3.94"/><rect x="22.85" y="41.41" width="3" height="3.94"/><rect x="16.91" y="47.41" width="3" height="3.94"/><rect x="22.85" y="47.41" width="3" height="3.94"/><rect x="48.85" y="41.41" width="3" height="3.94"/><rect x="54.78" y="41.41" width="3" height="3.94"/><rect x="48.85" y="47.41" width="3" height="3.94"/><rect x="54.78" y="47.41" width="3" height="3.94"/></g></g></svg>'); }
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74.7 72.35' width='39' height='37'%3E%3Cg id='Layer_1' data-name='Layer 1'  fill='%2381b3d2'%3E%3Cpath d='M29.5,65.34h16V41.41h-16V65.34Zm13.06-2.94H32.44V44.34H42.57Z'/%3E%3Cpath d='M72.62,39.44l2.08-2.08-9.91-9.91V.47H51V13.63L37.35,0,0,37.36l2.08,2.08,7.83-7.83v37.8H6v2.94H69.85V69.41H64.79V31.61Zm-18.71-36h7.94v21.1l-7.94-7.94Zm7.94,66h-49V28.67l24.5-24.5,24.5,24.5Z'/%3E%3Cpath d='M29.75,27.21a7.75,7.75,0,1,0,7.75-7.75A7.75,7.75,0,0,0,29.75,27.21Zm7.75-5a5,5,0,1,1-5,5A5,5,0,0,1,37.5,22.24Z'/%3E%3Crect x='16.91' y='41.41' width='3' height='3.94'/%3E%3Crect x='22.85' y='41.41' width='3' height='3.94'/%3E%3Crect x='16.91' y='47.41' width='3' height='3.94'/%3E%3Crect x='22.85' y='47.41' width='3' height='3.94'/%3E%3Crect x='48.85' y='41.41' width='3' height='3.94'/%3E%3Crect x='54.78' y='41.41' width='3' height='3.94'/%3E%3Crect x='48.85' y='47.41' width='3' height='3.94'/%3E%3Crect x='54.78' y='47.41' width='3' height='3.94'/%3E%3C/g%3E%3C/svg%3E"); }
 
 .feature_gift {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 75.08" width="32" height="38"><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1" fill="#81b3d2"><path d="M60.17,22.23H35.76c13.6-6.81,14.69-11.11,14.19-13.52-1.14-3.92-5.6-6.94-9.85-5.34-5.48,2.06-7,10.26-8.51,16.19-1.89-6-3.73-13.65-8-17.52A7.19,7.19,0,0,0,17.9,0c-4,.35-9.65,5.32-7.34,10.85,2.22,5.31,9.54,8.67,14.35,11.35H2.83A2.84,2.84,0,0,0,0,25.07V36.25a2.84,2.84,0,0,0,2.84,2.83h.27v36h57v-36h.1A2.84,2.84,0,0,0,63,36.25V25.07A2.85,2.85,0,0,0,60.17,22.23ZM41.77,5.87c2.07-.31,4.91,1.28,5.18,3.17.39,2.72-3.35,5.19-5,6.34-2.48,1.72-4.85,2.61-7.18,4C35.63,15.75,37.27,6.54,41.77,5.87ZM19.23,15.72C17,14.25,12.79,11.34,12.89,8,13,4.49,18.54,1.55,21.57,4.2c3.8,3.33,5.62,11,7,16.36A68.29,68.29,0,0,1,19.23,15.72Zm5.88,56.43H6V39.08H25.11Zm0-36.06H3V25.23H25.11Zm10,36.06H28.05V25.23h7.06Zm22,0H38.05V39.08H57.13ZM60,36.08H38.05V25.23H60Z"/></g></g></svg>');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 63 75.08' width='32' height='38'%3E%3Cg id='Layer_1' data-name='Layer 1' fill='%2381b3d2'%3E%3Cpath d='M60.17,22.23H35.76c13.6-6.81,14.69-11.11,14.19-13.52-1.14-3.92-5.6-6.94-9.85-5.34-5.48,2.06-7,10.26-8.51,16.19-1.89-6-3.73-13.65-8-17.52A7.19,7.19,0,0,0,17.9,0c-4,.35-9.65,5.32-7.34,10.85,2.22,5.31,9.54,8.67,14.35,11.35H2.83A2.84,2.84,0,0,0,0,25.07V36.25a2.84,2.84,0,0,0,2.84,2.83h.27v36h57v-36h.1A2.84,2.84,0,0,0,63,36.25V25.07A2.85,2.85,0,0,0,60.17,22.23ZM41.77,5.87c2.07-.31,4.91,1.28,5.18,3.17.39,2.72-3.35,5.19-5,6.34-2.48,1.72-4.85,2.61-7.18,4C35.63,15.75,37.27,6.54,41.77,5.87ZM19.23,15.72C17,14.25,12.79,11.34,12.89,8,13,4.49,18.54,1.55,21.57,4.2c3.8,3.33,5.62,11,7,16.36A68.29,68.29,0,0,1,19.23,15.72Zm5.88,56.43H6V39.08H25.11Zm0-36.06H3V25.23H25.11Zm10,36.06H28.05V25.23h7.06Zm22,0H38.05V39.08H57.13ZM60,36.08H38.05V25.23H60Z'/%3E%3C/g%3E%3C/svg%3E");
   background-position: 25px 15px; }
 
 .feature_food {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.17 68.96" width="40" height="35"><g id="Слой_2" data-name="Слой 2"><g id="Layer_1" data-name="Layer 1" fill="#81b3d2"><path d="M71.91,46H4.25A4.26,4.26,0,0,0,0,50.29v3.45A4.27,4.27,0,0,0,4.25,58h1v1A10,10,0,0,0,15.13,69H61A10,10,0,0,0,71,59V58h1a4.26,4.26,0,0,0,4.25-4.25V50.29A4.26,4.26,0,0,0,71.91,46ZM68,59A6.93,6.93,0,0,1,61,66H15.13A6.93,6.93,0,0,1,8.21,59V58H68Zm5.21-5.29A1.27,1.27,0,0,1,71.91,55H4.25A1.27,1.27,0,0,1,3,53.75V50.29A1.27,1.27,0,0,1,4.25,49H71.91a1.27,1.27,0,0,1,1.25,1.25Z"/><polygon points="16.16 37.86 21.64 41.86 27.11 37.86 32.59 41.86 38.07 37.86 43.55 41.86 49.03 37.86 54.51 41.86 59.98 37.86 65.47 41.86 71.84 37.21 70.07 34.79 65.47 38.14 59.98 34.14 54.51 38.14 49.03 34.14 43.55 38.14 38.07 34.14 32.59 38.14 27.11 34.14 21.64 38.14 16.16 34.14 10.69 38.14 6.09 34.79 4.32 37.21 10.69 41.86 16.16 37.86"/><path d="M70.89,31.09c0-.61.05-2.62,0-3C70.24,12.48,55.8,0,38.08,0S5.92,12.48,5.24,28.09c0,.38,0,2.39,0,3ZM38.08,3c16,0,29.15,11.15,29.84,25.09H8.24C8.93,14.15,22.05,3,38.08,3Z"/><circle cx="38.08" cy="15.04" r="2"/><circle cx="30.08" cy="10.08" r="2"/><circle cx="46.08" cy="10.08" r="2"/></g></g></svg>');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 76.17 68.96' width='40' height='35'%3E%3Cg id='Layer_1' data-name='Layer 1' fill='%2381b3d2'%3E%3Cpath d='M71.91,46H4.25A4.26,4.26,0,0,0,0,50.29v3.45A4.27,4.27,0,0,0,4.25,58h1v1A10,10,0,0,0,15.13,69H61A10,10,0,0,0,71,59V58h1a4.26,4.26,0,0,0,4.25-4.25V50.29A4.26,4.26,0,0,0,71.91,46ZM68,59A6.93,6.93,0,0,1,61,66H15.13A6.93,6.93,0,0,1,8.21,59V58H68Zm5.21-5.29A1.27,1.27,0,0,1,71.91,55H4.25A1.27,1.27,0,0,1,3,53.75V50.29A1.27,1.27,0,0,1,4.25,49H71.91a1.27,1.27,0,0,1,1.25,1.25Z'/%3E%3Cpolygon points='16.16 37.86 21.64 41.86 27.11 37.86 32.59 41.86 38.07 37.86 43.55 41.86 49.03 37.86 54.51 41.86 59.98 37.86 65.47 41.86 71.84 37.21 70.07 34.79 65.47 38.14 59.98 34.14 54.51 38.14 49.03 34.14 43.55 38.14 38.07 34.14 32.59 38.14 27.11 34.14 21.64 38.14 16.16 34.14 10.69 38.14 6.09 34.79 4.32 37.21 10.69 41.86 16.16 37.86'/%3E%3Cpath d='M70.89,31.09c0-.61.05-2.62,0-3C70.24,12.48,55.8,0,38.08,0S5.92,12.48,5.24,28.09c0,.38,0,2.39,0,3ZM38.08,3c16,0,29.15,11.15,29.84,25.09H8.24C8.93,14.15,22.05,3,38.08,3Z'/%3E%3Ccircle cx='38.08' cy='15.04' r='2'/%3E%3Ccircle cx='30.08' cy='10.08' r='2'/%3E%3Ccircle cx='46.08' cy='10.08' r='2'/%3E%3C/g%3E%3C/svg%3E");
   background-position: 18px 22px; }
 
 .feature__title {
@@ -1456,7 +1456,7 @@ template {
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_tick" viewBox="0 0 23.05 16.25"><defs><style>.form_tick-1{fill:#231f20;}</style></defs><path class="form_tick-1" d="M22.8,1.3,21.75.25a.85.85,0,0,0-1.2,0L8.69,12.1,2.5,5.91a.85.85,0,0,0-1.2,0L.25,7a.85.85,0,0,0,0,1.2L8.09,16A.87.87,0,0,0,9.3,16L22.8,2.5A.85.85,0,0,0,22.8,1.3Z"/></svg>'); }
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='form_tick' viewBox='0 0 23.05 16.25'%3E%3Cdefs%3E%3Cstyle%3E.form_tick-1%7Bfill:%23231f20;%7D%3C/style%3E%3C/defs%3E%3Cpath class='form_tick-1' d='M22.8,1.3,21.75.25a.85.85,0,0,0-1.2,0L8.69,12.1,2.5,5.91a.85.85,0,0,0-1.2,0L.25,7a.85.85,0,0,0,0,1.2L8.09,16A.87.87,0,0,0,9.3,16L22.8,2.5A.85.85,0,0,0,22.8,1.3Z'/%3E%3C/svg%3E"); }
 
 .form__caption {
   font-size: 14px;
@@ -1488,10 +1488,10 @@ template {
     background-position: center; }
 
 .form__inputWrapper_tel:before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_phone" viewBox="0 0 18 18" width="18" height="18"><defs><style>.form_phone-1{fill:#010101;}</style></defs><title>form_phone</title><path id="Shape" class="form_phone-1" d="M3.6,7.8a15.57,15.57,0,0,0,6.6,6.6l2.2-2.2a.8.8,0,0,1,1-.2,10.45,10.45,0,0,0,3.6.6,1,1,0,0,1,1,1V17a1,1,0,0,1-1,1A17,17,0,0,1,0,1,.94.94,0,0,1,1,0H4.5a.94.94,0,0,1,1,1,11.33,11.33,0,0,0,.6,3.6,1.23,1.23,0,0,1-.2,1L3.6,7.8Z"/></svg>'); }
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='form_phone' viewBox='0 0 18 18' width='18' height='18'%3E%3Cdefs%3E%3Cstyle%3E.form_phone-1%7Bfill:%23010101;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eform_phone%3C/title%3E%3Cpath id='Shape' class='form_phone-1' d='M3.6,7.8a15.57,15.57,0,0,0,6.6,6.6l2.2-2.2a.8.8,0,0,1,1-.2,10.45,10.45,0,0,0,3.6.6,1,1,0,0,1,1,1V17a1,1,0,0,1-1,1A17,17,0,0,1,0,1,.94.94,0,0,1,1,0H4.5a.94.94,0,0,1,1,1,11.33,11.33,0,0,0,.6,3.6,1.23,1.23,0,0,1-.2,1L3.6,7.8Z'/%3E%3C/svg%3E"); }
 
 .form__inputWrapper_email:before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="form_mail" viewBox="0 0 16 12" width="16" height="12"><title>form_mail</title><path d="M8,10a2.32,2.32,0,0,1-1-.34L0,6v7a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6L9,9.66A2.32,2.32,0,0,1,8,10Zm7-8H1A1,1,0,0,0,0,3v.76L8,8l8-4.21V3A1,1,0,0,0,15,2Z" transform="translate(0 -2)"/></svg>'); }
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='form_mail' viewBox='0 0 16 12' width='16' height='12'%3E%3Ctitle%3Eform_mail%3C/title%3E%3Cpath d='M8,10a2.32,2.32,0,0,1-1-.34L0,6v7a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6L9,9.66A2.32,2.32,0,0,1,8,10Zm7-8H1A1,1,0,0,0,0,3v.76L8,8l8-4.21V3A1,1,0,0,0,15,2Z' transform='translate(0 -2)'/%3E%3C/svg%3E"); }
 
 .form__item_contacts {
   padding-bottom: 15px; }
@@ -1698,18 +1698,6 @@ template {
   .form__btn {
     width: 480px; } }
 
-.modal {
-  width: 320px;
-  margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15); }
-  @media (min-width: 768px) {
-    .modal {
-      width: 768px; } }
-  @media (min-width: 1200px) {
-    .modal {
-      width: 1200px; } }
-
 .content {
   width: 320px;
   margin: 0 auto;
@@ -1762,6 +1750,17 @@ template {
     vertical-align: top; }
 
 @media (min-width: 768px) {
+  body {
+    width: 320px;
+    margin: 0 auto; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    body {
+      width: 768px; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    body {
+      width: 1200px; } }
+
+@media (min-width: 768px) {
   .intro__header {
     padding-top: 75px;
     min-height: 518px;
@@ -1782,19 +1781,9 @@ template {
   html {
     background-color: #f2f2f2; }
   body {
-    width: 320px;
-    margin: 0 auto;
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-    background-color: #fff; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
-    body {
-      width: 768px; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
-    body {
-      width: 1200px; } }
-
-@media (min-width: 1200px) {
+    background-color: #fff; }
   .intro__header_photo {
     padding-top: 100px;
     min-height: 301px; }
