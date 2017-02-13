@@ -131,9 +131,10 @@ function seektimeupdate(){
 	if(dursecs < 10){ dursecs = "0"+dursecs; }
 	if(curmins < 10){ curmins = "0"+curmins; }
 	if(durmins < 10){ durmins = "0"+durmins; }
-	video__time.innerHTML = curmins+":"+cursecs;
-	video__timeTotal.innerHTML = durmins+":"+dursecs;
+//	video__time.innerHTML = curmins+":"+cursecs;
+//	video__timeTotal.innerHTML = durmins+":"+dursecs;
 }
+
 function vidmute(){
 	if(vid.muted){
 		vid.muted = false;
@@ -143,9 +144,11 @@ function vidmute(){
 		video__mute.style.backgroundClip="content-box";
 	}
 }
+
 function setvolume(){
 	vid.volume = video__volume.value / 100;
 }
+
 function toggleFullScreen(){
 	if(vid.requestFullScreen){
 		vid.requestFullScreen();
