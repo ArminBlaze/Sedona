@@ -66,15 +66,15 @@
 					
 					<label for="name" class="form__label">
 					<span class="form__caption">Имя:</span>
-						<input type="text" class="form__input form__input_name" placeholder="Петр" required>
+						<input id="name" type="text" class="form__input form__input_name" placeholder="Петр" required>
 					</label>
 					<label for="surname" class="form__label">
 					<span class="form__caption">Фамилия:</span>
-						<input type="text" class="form__input form__input_name form__input_surname" placeholder="Иванов" required>
+						<input id="surname" type="text" class="form__input form__input_name form__input_surname" placeholder="Иванов" required>
 					</label>
 					<label for="patronymic" class="form__label">
 					<span class="form__caption">Отчество:</span>
-						<input type="text" class="form__input form__input_name form__input_patronymic" placeholder="Александрович">
+						<input id="patronymic" type="text" class="form__input form__input_name form__input_patronymic" placeholder="Александрович">
 					</label>
 				</div>
 				
@@ -82,15 +82,15 @@
 					<div class="form__title form__title_contacts">Контактная информация:</div>
 					<label for="tel" class="form__label form__label_contacts form__label_tel">
 						<span class="form__caption form__caption_contacts"><span class="form__caption_desktop">Контактный </span>телефон: </span>
-						<span class="form__inputWrapper form__inputWrapper_tel"><input class="form__input form__input_contacts form__input_tel" id="tel" type="tel" placeholder="Введите телефон" required></span>
+						<span class="form__inputWrapper form__inputWrapper_tel"><input class="form__input form__input_contacts form__input_tel" id="tel" type="tel" name="tel" placeholder="Введите телефон" ></span>
 						<span class="form__caption form__caption_contacts form__error form__error_tel">
 						Ошибка, перепроверьте номер
 						</span>
 					</label>
 					<label for="email" class="form__label form__label_contacts form__label_email">
 						<span class="form__caption form__caption_contacts">Электронная почта: </span>
-						<span class="form__inputWrapper form__inputWrapper_email"><input class="form__input form__input_contacts form__input_email" id="email" type="email" placeholder="Введите e-mail" required></span>
-						<span for="email" class="form__caption form__caption_contacts form__error form__error_email">
+						<span class="form__inputWrapper form__inputWrapper_email"><input class="form__input form__input_contacts form__input_email" id="email" type="email" name="email" placeholder="Введите e-mail" ></span>
+						<span class="form__caption form__caption_contacts form__error form__error_email">
 						Ошибка, перепроверьте адрес
 						</span>
 					</label>
@@ -111,18 +111,18 @@
 				
 				<div class="form__item form__item_places">
 					<div class="form__title form__title_places">Посещенные достопримечательности:</div>
-					<div class="form__wrapper form__wrapper_left">
-						<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
-						<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
-						<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
-						<label class="form__label form__label_click form__label_checkbox" for="Slide">Слайд-парк</label>
-					</div>
-					<div class="form__wrapper form__wrapper_right">
-						<input id="BellMountain" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
-						<label class="form__label form__label_click form__label_checkbox" for="BellMountain">Гора-Колокол</label>
-						<input id="RedRocks" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
-						<label class="form__label form__label_click form__label_checkbox" for="RedRocks">Красные скалы</label>
-					</div>
+					
+					<div class="form__wrapper">
+							<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+							<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
+							<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+							<label class="form__label form__label_click form__label_checkbox" for="Slide">Слайд-парк</label>
+							<input id="BellMountain" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+							<label class="form__label form__label_click form__label_checkbox" for="BellMountain">Гора-Колокол</label>
+							<input id="RedRocks" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
+							<label class="form__label form__label_click form__label_checkbox" for="RedRocks">Красные скалы</label>
+						</div>
+					
 				</div>
 				
 				<div class="form__item">
@@ -130,7 +130,7 @@
 					
 					<textarea class="form__input form__input_emotions" name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
 					
-					<button class="btn form__btn">
+					<button class="btn form__btn form__send">
 					Отправить отзыв
 					</button>
 					
@@ -181,15 +181,28 @@
 	
 	
 	<div class="modal modal_failure">
-  	<h3 class="form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-  	<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  		<h3 class="form__title form__title_header modal__title">ЧТО-ТО ПОШЛО <br> НЕ ТАК!</h3>
+  		<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  		
+  				<button type="submit" class="btn modal__btn modal__btn_failure modal__close">ОК</button>
+  </div>
+  
   	
-		<button type="submit" class="btn btn-2">ОК</button>
+  <div class="modal modal_success">
+  	<div class="modal__header">
+  		<h3 class="form__title form__title_header modal__title">Ваш отзыв отправлен!</h3>
+  		<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+  	</div>
+  	
+		<div class="modal__footer">
+			<button type="submit" class="btn modal__btn modal__close">Закрыть окно</button>
+		</div>
   </div>
 	
 	
 	
 	<script src="js/menu.js"></script>
+	<script src="js/modal.js"></script>
 	
 	<script src="js/localStorage.js">
 //		https://osvaldas.info/caching-svg-sprite-in-localstorage

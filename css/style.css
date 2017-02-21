@@ -1,4 +1,12 @@
 @charset "UTF-8";
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
 body {
   font-size: 18px;
   line-height: 27px;
@@ -1503,9 +1511,7 @@ template {
   text-transform: none;
   color: #ff5c5c;
   margin: 0;
-  margin-top: 5px; }
-
-.form__error_email {
+  margin-top: 5px;
   display: none; }
 
 .form__input_hidden {
@@ -1518,6 +1524,55 @@ template {
   margin-top: 42px; }
 
 .form__reminder {
+  display: none; }
+
+.modal {
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none; }
+  @media (min-width: 768px) {
+    .modal {
+      width: 768px; } }
+  @media (min-width: 1200px) {
+    .modal {
+      width: 1200px; } }
+
+.modal__btn {
+  font-size: 18px;
+  margin: 0 auto; }
+
+.modal_failure {
+  background-color: #fff;
+  padding: 25px 55px 35px;
+  z-index: 200; }
+
+.modal__btn_failure {
+  width: 180px;
+  margin-top: 25px; }
+
+.modal_success {
+  z-index: 100; }
+
+.modal__header {
+  background-color: #fff;
+  padding: 35px 50px 20px; }
+
+.modal__footer {
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+.modal__title br {
   display: none; }
 
 @media (min-width: 768px) {
@@ -1612,17 +1667,47 @@ template {
     margin-top: -25px;
     margin-bottom: 40px; }
   .form__item_places {
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px; }
   .form__wrapper {
-    box-sizing: border-box;
-    width: 324px;
-    float: left; }
-  .form__wrapper_left {
-    padding-left: 95px; }
-  .form__wrapper_right {
-    padding-left: 30px; }
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .form__label_checkbox {
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    -webkit-flex-basis: 34%;
+    -ms-flex-preferred-size: 34%;
+    flex-basis: 34%;
+    max-width: 50%;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin-left: 30px;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .form__label_checkbox:nth-of-type(2) {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
+  .form__label_checkbox:nth-of-type(3) {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+  .form__label_checkbox:nth-of-type(4) {
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4; }
   .form__title_emotions {
     margin-bottom: 60px; }
   .form__btn {
@@ -1635,7 +1720,25 @@ template {
     text-transform: uppercase;
     position: absolute;
     right: 0;
-    bottom: 15px; } }
+    bottom: 15px; }
+  .modal_failure {
+    width: 400px;
+    padding-top: 21px; }
+  .modal__title {
+    width: auto;
+    line-height: 40px;
+    margin-bottom: 25px; }
+  .modal__title br {
+    display: block; }
+  .modal__btn_failure {
+    width: 272px;
+    margin-top: 33px; }
+  .modal__footer {
+    padding: 44px 91px; }
+  .modal_success {
+    width: 640px; }
+  .modal__btn {
+    font-size: 21px; } }
 
 @media (min-width: 1200px) {
   .form {
@@ -1689,14 +1792,31 @@ template {
     padding-left: 0;
     padding-right: 0; }
   .form__wrapper {
-    padding: 0;
-    width: 480px; }
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .form__label_checkbox {
-    float: left; }
-  .form__label_checkbox:first-of-type {
-    margin-right: 70px; }
+    margin-left: 0;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto; }
   .form__btn {
     width: 480px; } }
+
+.modal-content-show {
+  display: block; }
+
+.form__error {
+  display: none; }
+
+.modalError .form__error {
+  display: block; }
+
+.modalError_tel .form__error_tel {
+  display: block; }
+
+.modalError_email .form__error_email {
+  display: block; }
 
 .content {
   width: 320px;

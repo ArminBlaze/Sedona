@@ -269,9 +269,6 @@
 	margin: 0;
 	margin-top: 5px;
 //	width: 100%;
-}
-
-.form__error_email {
 	display: none;
 }
 
@@ -290,6 +287,57 @@
 .form__reminder {
 	display: none;
 }
+
+
+.modal {
+	@include container;
+	box-shadow: 0 7px 15px rgba(black, 0.15);
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.modal__btn {
+	font-size: 18px;
+	margin: 0 auto;
+}
+
+.modal_failure {
+	background-color: $bg1;
+	padding: 25px 55px 35px;
+	z-index: 200;
+}
+
+.modal__btn_failure {
+	width: 180px;
+	margin-top: 25px;
+}
+
+.modal_success {
+	z-index: 100;
+}
+
+.modal__header {
+	background-color: $bg1;
+	padding: 35px 50px 20px;
+}
+
+.modal__footer {
+	background-color: $bg_body;
+	padding: 20px;
+}
+
+.modal__title br {
+	display: none;
+}
+
+
 
 @media #{$tabletWidth} { 
 	
@@ -420,24 +468,42 @@
 	
 	.form__item_places {
 		padding-bottom: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	
 	.form__wrapper {
-		box-sizing: border-box;
-		width: 324px;
-		float: left;
-	}
-	
-	.form__wrapper_left {
-		padding-left: 95px;
-	}
-
-	.form__wrapper_right {
-		padding-left: 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+//		padding-left: 95px;
+//		padding-right: 95px;
+		justify-content: center;
 	}
 	
 	.form__label_checkbox {
 		margin-bottom: 32px;
+		flex-basis: 34%;
+		max-width: 50%;
+		flex-shrink: 1;
+//		flex-grow: 1;
+		margin-left: 30px;
+		order: 1;
+	}
+	
+	.form__label_checkbox:nth-of-type(2) {
+		order: 3;
+	}
+	
+	.form__label_checkbox:nth-of-type(3) {
+		order: 2;
+	}
+	
+	.form__label_checkbox:nth-of-type(4) {
+		order: 4;
 	}
 	
 	.form__title_emotions {
@@ -459,7 +525,39 @@
 		bottom: 15px;
 	}
 	
+	.modal_failure {
+		width: 400px;
+		padding-top: 21px;
+//		padding-left: 80px;
+//		padding-right: 80px;
+	}
 	
+	.modal__title {
+		width: auto;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
+	
+	.modal__title br {
+		display: block;
+	}
+	
+	.modal__btn_failure {
+		width: 272px;
+		margin-top: 33px;
+	}
+	
+	.modal__footer {
+		padding: 44px 91px;
+	}
+	
+	.modal_success {
+		width: 640px;
+	}
+	
+	.modal__btn {
+		font-size: 21px;
+	}
 }
 
 @media #{$desktopWidth} {
@@ -552,21 +650,15 @@
 	}
 	
 	.form__wrapper {
-		padding: 0;
-		width: 480px;
+		justify-content: space-between;
 	}
 	
+
 	.form__label_checkbox {
-		float: left;
+//		float: left;
 //		margin-right: 60px;
-	}
-	
-	.form__label_checkbox:first-of-type {
-		margin-right: 70px;
-	}
-	
-	.form__wrapper_right {
-//		padding-left: 40px;
+		margin-left: 0;
+		flex-basis: auto;
 	}
 	
 	.form__btn {
@@ -574,12 +666,33 @@
 	}
 }
 
+.modal-content-show {
+	display: block;
+}
+
+.form__error {
+	display: none;
+}
+
+.modalError {
+	.form__error {
+		display: block;
+	}
+}
+
+.modalError_tel {
+	.form__error_tel {
+		display: block;
+	}
+}
+
+.modalError_email {
+	.form__error_email {
+		display: block;
+	}
+}
+
+
 	
 
 
-
-//.modal {
-//	@include container;
-//	background-color: $bg1;
-//	box-shadow: 0 7px 15px rgba(black, 0.15);
-//}

@@ -18,6 +18,16 @@ $color3: white;
 
 // Settings
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
 	font-size: 18px;
 	line-height: 27px;
