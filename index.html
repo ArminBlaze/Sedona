@@ -185,7 +185,9 @@
 -->
 		
 		
-		<div class="map"></div>
+		<div class="map" id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498592.7131174384!2d-111.95554174393753!3d34.81835704264352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1487713413573" width="100%" height="350" allowfullscreen></iframe>
+		</div>
 	</div>
 <!--	END OF SEARCH-->
 	
@@ -226,6 +228,12 @@
 //		https://osvaldas.info/caching-svg-sprite-in-localstorage
 	</script>
 	
+	
+	<script src="js/map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+        
+   
 	
 </body>
 </html>
