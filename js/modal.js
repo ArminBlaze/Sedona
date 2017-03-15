@@ -89,7 +89,46 @@ form.addEventListener("submit", function(event) {
 	if (!(tel.value && email.value)) {
 		popup.classList.add("modal-content-show");
 	}
+	
+	//AJAX
+	
+	else {
+		
+	
 
+	(function() {
+		
+		console.log("Запуск Аякса")
+		
+	if (!("FormData" in window)) {
+		return;
+	}
+	
+		event.preventDefault();
+		var data = new FormData(form);
+		request(data, function(response){
+			console.log(response);
+		});
+	
+	function request(data, fn) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("post", "/send?" + (new Date()).getTime());
+		xhr.addEventListener("readystatechange", function() {
+			if (xhr.readyState == 4) {
+				fn(xhr.responseText);
+			}
+		});
+		
+		xhr.send(data);
+	}
+	
+	
+	
+	
+	
+	
+})();
+	}
 });
 
 
