@@ -54,8 +54,8 @@
 			
 		</section>
 		
-		<div class="form">
-			<form action="/echo" method="post">
+		<div class="form__wrapper">
+			<form id="form" action="/echo" method="post">
 				<div class="form__header">
 					<div class="form__title form__title_header">Оставьте свой отзыв</div>
 					<div class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</div>
@@ -112,7 +112,7 @@
 				<div class="form__item form__item_places">
 					<div class="form__title form__title_places">Посещенные достопримечательности:</div>
 					
-					<div class="form__wrapper">
+					<div class="form__inner">
 							<input id="Devil" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
 							<label class="form__label form__label_click form__label_checkbox" for="Devil">Мост Дьявола</label>
 							<input id="Slide" class="form__input form__input_hidden" type="checkbox" name="places" value="dunno">
@@ -207,6 +207,9 @@
 	<script src="js/localStorage.js">
 //		https://osvaldas.info/caching-svg-sprite-in-localstorage
 	</script>
+	
+	<script src="js/ajax.js"></script>
+	
 	
 </body>
 </html>
