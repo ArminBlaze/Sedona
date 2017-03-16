@@ -96,7 +96,6 @@ form.addEventListener("submit", function(event) {
 		
 	
 
-	(function() {
 		
 		console.log("Запуск Аякса")
 		
@@ -127,7 +126,6 @@ form.addEventListener("submit", function(event) {
 	
 	
 	
-})();
 	}
 });
 
