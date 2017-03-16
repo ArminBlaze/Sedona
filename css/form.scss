@@ -27,7 +27,7 @@
 	}
 }
 
-.form {
+.form__wrapper {
 	font-size: 18px;
 	line-height: 26px;
 	background-color: #fff;
@@ -341,7 +341,7 @@
 
 @media #{$tabletWidth} { 
 	
-	.form {
+	.form__wrapper {
 		position: relative;
 		margin-left: 60px;
 		margin-right: 60px;
@@ -472,7 +472,7 @@
 		padding-right: 0px;
 	}
 	
-	.form__wrapper {
+	.form__inner {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -561,7 +561,7 @@
 }
 
 @media #{$desktopWidth} {
-	.form {
+	.form__wrapper {
 		margin-left: 120px;
 		margin-right: 120px;
 	}
@@ -649,7 +649,7 @@
 		padding-right: 0;
 	}
 	
-	.form__wrapper {
+	.form__inner {
 		justify-content: space-between;
 	}
 	
