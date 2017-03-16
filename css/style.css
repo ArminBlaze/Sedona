@@ -1264,6 +1264,7 @@ template {
     fill: white;
     display: inline-block;
     margin: 0;
+    padding: 15px;
     width: auto;
     height: auto; }
     .video__btn:hover {
@@ -1273,7 +1274,7 @@ template {
       opacity: 0.3;
       fill: white; }
     .video__btn svg {
-      padding: 15px;
+      padding: 0;
       display: block; } }
 
 @media (min-width: 1200px) {

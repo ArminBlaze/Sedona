@@ -314,11 +314,9 @@
 		width: 648px;
 		height: 499px;
 		background-image: url(../img/video-tablet.jpg);
-		
 	}
 	
 	.video__controls {
-		
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -351,7 +349,7 @@
 		fill: white;
 		display: inline-block;
 		margin: 0;
-//		padding: 20px;
+		padding: 15px;
 		width: auto;
 		height: auto;
 		
@@ -366,10 +364,10 @@
 		}
 		
 		
-	svg {
+		svg {
 //			height: 100%;
 //			width: 100%;
-			padding: 15px;
+			padding: 0;
 			display: block;
 		}
 	}
