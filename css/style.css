@@ -1844,7 +1844,7 @@ template {
   background-image: url(../img/intro_background@1x-min.jpg); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro__header {
-      background-image: url(../img/intro_background_MOD@2x-min.jpg); } }
+      background-image: url(../img/intro_background_MOD@2x-min_extreme.jpg); } }
   .intro__header:after {
     content: '';
     position: absolute;
@@ -1904,7 +1904,13 @@ template {
   body {
     padding: 0;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-    background-color: #fff; }
+    background-color: #fff; } }
+
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .intro__header {
+    background-image: url(../img/intro_background_MOD@2x-min.jpg); } }
+
+@media (min-width: 1200px) {
   .intro__header_photo {
     padding-top: 100px;
     min-height: 301px; }

@@ -115,7 +115,7 @@ img {
 		(-webkit-min-device-pixel-ratio: 1.5),
 		(min-resolution: 144dpi),
 		(min-resolution: 1.5dppx) {
-			background-image: url(../img/intro_background_MOD@2x-min.jpg);
+			background-image: url(../img/intro_background_MOD@2x-min_extreme.jpg);
 	}
 	
 	&:after {
@@ -213,6 +213,15 @@ img {
 		box-shadow: 0 5px 15px rgba(#000101, 0.2);
 		background-color: #fff;
 		
+	}
+	
+	.intro__header {
+		@media 
+		(-webkit-min-device-pixel-ratio: 1.5),
+		(min-resolution: 144dpi),
+		(min-resolution: 1.5dppx) {
+			background-image: url(../img/intro_background_MOD@2x-min.jpg);
+		}
 	}
 	
     
