@@ -704,13 +704,13 @@ template {
   background-image: url(../img/photo-city@1x.jpg); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .reasons__image_city {
-      background-image: url(../img/photo-city@2x.jpg); } }
+      background-image: url(../img/photo-city@2x-min.jpg); } }
 
 .reasons__image_bridge {
   background-image: url(../img/photo-bridge@1x.jpg); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .reasons__image_bridge {
-      background-image: url(../img/photo-bridge@2x.jpg); } }
+      background-image: url(../img/photo-bridge@2x-min.jpg); } }
 
 .features {
   box-sizing: border-box;
@@ -1844,7 +1844,7 @@ template {
   background-image: url(../img/intro_background@1x.jpg); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro__header {
-      background-image: url(../img/intro_background_MOD@2x.jpg); } }
+      background-image: url(../img/intro_background_MOD@2x-min.jpg); } }
   .intro__header:after {
     content: '';
     position: absolute;
