@@ -1,11 +1,13 @@
 *.psd
 /bower_components
+/build
 prepros.cfg
 *.css.map
 img/temp
 /temp
 bower.json
 prepros-6.config
+/node_modules
 
 # Windows image file caches
 Thumbs.db
