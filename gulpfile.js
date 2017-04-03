@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
+var cheerio = require('gulp-cheerio');
 var run = require("run-sequence");
 var del = require("del");
 var debug = require("gulp-debug");
@@ -35,10 +36,12 @@ gulp.task("style", function() {
 	]))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest("build/css")) //создаем обычный css файл
+//	.pipe(debug({title: 'css'}))
 	.pipe(csso()) //минифицируем
 	.pipe(rename("style.min.css"))
 	.pipe(gulp.dest("build/css"))
-	.pipe(server.reload({stream: true}));
+//	.pipe(server.reload({stream: true}))
+//	.pipe(debug({title: 'server'}));
 });
 
 gulp.task("images", function() {
@@ -68,17 +71,24 @@ gulp.task("sprite", function() {
 	.pipe(svgstore({ 
 		inlineSvg: true //вырезать лишнее
 	}))
+	.pipe(cheerio(function ($) {
+      $('svg').attr('style',  'display:none');
+	}))
 	.pipe(rename("sprite.svg")) //имя спрайта
 	.pipe(gulp.dest("build/img/sprite")) //куда сохранить спрайт
-})
+});
 
 gulp.task("serve", ["style"], function() {
 	server.init({
 		server: "build" //корневой каталог build, все пути относительно его
 	});
 	gulp.watch("css/**/*.scss", ["style"]);
-	gulp.watch("*.html").on("change", server.reload)
-})
+	gulp.watch("*.html", ["copy"]);	
+	gulp.watch("js/**/*.js", ["copy"]);	
+//	gulp.watch("build/**/*.html").on("change",	server.reload);
+//	server.watch("build/**/*.css").on("change", server.reload({stream: true}));
+	server.watch("build/**/*.*").on("change", server.reload);
+});
 
 ///////////////////
 
@@ -88,7 +98,7 @@ gulp.task("work", function(fn) {
 		"serve",
 		fn
 	);
-})
+});
 
 gulp.task("build", function(fn) {
 	run(
@@ -98,7 +108,7 @@ gulp.task("build", function(fn) {
 		"images",
 		"sprite",
 		fn);
-})
+});
 
 gulp.task("copy", function() {
 	return gulp.src([

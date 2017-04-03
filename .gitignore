@@ -8,6 +8,7 @@ img/temp
 bower.json
 prepros-6.config
 /node_modules
+/.publish
 
 # Windows image file caches
 Thumbs.db

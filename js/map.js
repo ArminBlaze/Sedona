@@ -3,7 +3,7 @@ function initMap() {
 				
 	var map = new google.maps.Map(mapDiv, {
 //          center: {lat: 59.941, lng: 30.2996},
-		center: new google.maps.LatLng(59.941, 30.2996),
+		center: new google.maps.LatLng(59.9389463, 30.3150017),
           zoom: 15,
 					scrollwheel: false,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -24,7 +24,7 @@ function initMap() {
 			
 /////
 				
-				var myLatLng = new google.maps.LatLng(59.9389463, 30.3150017);
+				var myLatLng = new google.maps.LatLng(59.9389463, 30.3153090);
 	
   			var beachMarker = new google.maps.Marker({
     		position: myLatLng,
