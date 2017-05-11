@@ -18,6 +18,9 @@ var del = require("del");
 var debug = require("gulp-debug");
 var newer = require("gulp-newer");
 var deploy = require("gulp-gh-pages");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+//var strip = require('gulp-strip-comments');
 
 gulp.task("style", function() {
 	return gulp.src("css/style.scss")
@@ -36,13 +39,19 @@ gulp.task("style", function() {
 	]))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest("build/css")) //создаем обычный css файл
+//	.pipe(server.stream({match: '**/*.css'}))
 //	.pipe(debug({title: 'css'}))
-	.pipe(csso()) //минифицируем
-	.pipe(rename("style.min.css"))
-	.pipe(gulp.dest("build/css"))
 //	.pipe(server.reload({stream: true}))
 //	.pipe(debug({title: 'server'}));
 });
+
+gulp.task("cssmin", function() {
+	return gulp.src("build/css/style.css")
+	.pipe(csso()) //минифицируем
+	.pipe(rename("style.min.css"))
+	.pipe(gulp.dest("build/css"))
+	
+})
 
 gulp.task("images", function() {
 	return gulp.src("build/img/**/*.{png,jpg,gif}")
@@ -119,11 +128,9 @@ gulp.task("copy", function() {
 	], {
 		base: "."
 	})
-//	.pipe(debug({title: 'src'}))
 	.pipe(newer("build"))
-//	.pipe(debug({title: 'newer'}))
+//	.pipe(strip({safe: true}))
 	.pipe(gulp.dest("build"))
-//	.pipe(debug({title: 'dest'}))
 });
 
 gulp.task("clean", function() {
@@ -134,4 +141,22 @@ gulp.task("deploy", function() {
 	return gulp.src("build/**/*")
 	.pipe(deploy())
 });
+
+
+gulp.task('js', function() {
+	return gulp.src('js/**/*.js')
+	.pipe(plumber({
+        errorHandler: function(err) {
+          notify.onError({
+            title: 'Javascript concat/uglify error',
+            message: err.message
+          })(err);
+          this.emit('end');
+        }
+      }))
+	.pipe(concat('main.js')) //конкатенация
+	.pipe(uglify()) //минификация
+	.pipe(gulp.dest('build/js'));
+});
+
 

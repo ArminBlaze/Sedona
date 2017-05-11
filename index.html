@@ -8,25 +8,25 @@
 	<meta
 				name="viewport"
 				content="width=device-width, initial-scale=1">
+	<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+	<script src="js/picturefill.js" async></script>
 </head>
 <body class="body_index">
 	
 	
 	<header class="mainHeader">
+	
+<!--	PRIVET PEKA13 P-->
 		
 		
 		<div class="mainHeader__logo">
-<!--
 			<picture>
 				<source media="(min-width: 1200px)" srcset="img/logo_desktop.svg">
 				<source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
 				<img src="img/logo.svg" width="102" height="82" alt="Sedona">
-			</picture>
--->
-			<picture>
-				<source media="(max-width: 768px)" srcset="img/logo.svg">
-				<source media="(max-width: 1200px)" srcset="img/logo_tablet.svg">
-				<img src="img/logo_desktop.svg" width="102" height="82" alt="Sedona">
 			</picture>
 		</div>
 	
@@ -228,8 +228,8 @@
 //		https://osvaldas.info/caching-svg-sprite-in-localstorage
 	</script>
 	
-	
 	<script src="js/map.js"></script>
+	
 	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
         async defer></script>
         

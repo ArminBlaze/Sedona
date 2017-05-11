@@ -51,6 +51,7 @@
 	margin-top: 8px;
 	color: $color1;
 	line-height: 24px;
+	cursor: pointer;
 	
 	svg {
 		opacity: 0.3;
@@ -60,6 +61,7 @@
 //		padding-top: 3px;
 		vertical-align: top;
 	}
+	
 	
 	&:hover svg {
 		opacity: 1;
